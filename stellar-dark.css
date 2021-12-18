@@ -1,0 +1,530 @@
+/******************************************************************
+Stellar Dark by Octavia N. (https://github.com/Lolabird/stellar-dark-theme-trilium)
+
+Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
+******************************************************************/
+/*****ROOT (COLOR AND FONT KEY)*****/
+:root{
+    /***main body (including CKEditor), modal(options menu), and some code colors (see last section for more code colors)*/
+    --text-gray: lightgray;
+    --devils-gray-lol: #666;
+    --background-gray: #111;
+    --supa-dark: black;
+    --midish-gray: #444;
+    --bold-sun: #fcfbb3;
+    --bright-sun: #cccb99;
+    --dim-sun: #969573;
+    --darkened-sun: #ccca6c;
+    --earth-sun: #333225;
+    --light-turquoise: #6df9f7;
+    --sea-foam: #6df9b1;
+    --italic-lilac: #fbb3fc;
+    --border-lilac: #993e9b;
+    --sea-green: #04c963;
+    --shallow-sea-blue: #54bcba;
+    --header-font-family: Times New Roman;
+}
+
+
+/*****HTML (GENERAL STYLES)*****/
+/******************************************************************
+These are variables that already exist in the native stylesheet, just redefined here. This could have been put in ':root' or 'body{}' but for the sake of organization, I kept them in 'html' where they have been similarly placed in the Light Theme. 
+******************************************************************/
+html {
+    --theme-style: dark;
+
+    /***fonts***/
+    /*general fonts*/
+    --main-font-family: MontserratLight;
+    --main-font-size: normal;
+
+    --tree-font-family: MontserratLight;
+    --tree-font-size: normal;
+
+    --detail-font-family: MontserratLight;
+    --detail-font-size: normal;
+
+   /*code fonts*/
+    --monospace-font-family: monospace;
+    --monospace-font-size: normal;
+
+    /***colors***/
+    /*main notes window*/
+    --main-background-color: var(--background-gray);
+    --main-text-color: var(--text-gray);
+    --main-border-color: var(--devils-gray-lol);
+
+    /*changes the window icons(x, [], -) and some text fields*/
+    --accented-background-color: var(--supa-dark);
+    
+    /*changes the edit icons on text notes and the alert messages*/
+    --more-accented-background-color: var(--midish-gray);
+
+   /*left, bottom left, and lower upper right icons*/
+    --button-background-color: transparent;
+    --button-disabled-background-color: var(--midish-gray);
+    --button-border-color: var(--text-gray);
+    --button-text-color: var(--text-gray);
+    --button-border-radius: 5px;
+
+    /*changes button in label detail*/
+    --primary-button-background-color: var(--midish-gray);
+    --primary-button-text-color:  var(--text-gray);
+    --primary-button-border-color:  var(--text-gray);
+
+    /* "muted-text-color" affects several components, but most are individually styled in this doc, so this should only affect the drop shadow of protected notes titles. */
+    --muted-text-color: var(--devils-gray-lol); 
+
+    /*notes title and text fields in options menu and find (ctrl+f) search*/
+    --input-text-color: var(--bright-sun);
+    /*affects find (ctrl+f) search input when inactive*/
+    --input-background-color: var(--dim-sun); 
+
+    /*changes the 'x' on the note tabs and the right+click and trilium (icon) menus*/
+    --hover-item-text-color: var(--text-gray);
+    /*changes side and right+click menus and note tabs*/
+    --hover-item-background-color: var(--supa-dark);
+
+    /*tree*/
+    --active-item-text-color: var(--supa-dark);
+    --active-item-background-color: var(--bright-sun);
+    --left-pane-background-color: var(--supa-dark);
+    --left-pane-text-color: var(--text-gray);
+    
+    /*right+click menus*/
+    --menu-text-color: var(--text-gray);
+    --menu-background-color: var(--background-gray);
+
+    /*the options menu*/
+    --modal-background-color: var(--background-gray);
+    --modal-backdrop-color: var(--text-gray);
+
+    /*left and bottom left menus*/
+    --launcher-pane-background-color: var(--background-gray);
+    --launcher-pane-text-color: var(--text-gray);/*doesn't seem to to do anything and is covered by other properties*/
+
+    /*tabs*/
+    --active-tab-background-color: var(--bold-sun);
+    --active-tab-text-color: var(--background-gray);
+    --inactive-tab-background-color: var(--midish-gray);
+    --inactive-tab-text-color: var(--text-gray);
+
+    /*general*/
+    --scrollbar-border-color: var(--dim-sun);
+    --tooltip-background-color: var(--background-gray);
+    --link-color: var(--light-turquoise);
+
+    --mermaid-theme: default;
+}
+
+
+/*****HEADERS*****/
+/*h1 is not defined, because it's not currently an option for headers in the main body*/
+body h2 {
+    color: var(--darkened-sun);
+    font-weight: 850;
+    font-family: var(--header-font-family);
+}
+body h3 {
+    color: var(--bright-sun);
+    font-weight: 700;
+    font-family: var(--header-font-family);
+}
+body h4 {
+    color: var(--bright-sun);
+    font-weight: 600;
+    font-family: var(--header-font-family);
+}
+body h5 {
+    color: var(--bright-sun);
+    font-weight: 600;
+    font-family: var(--header-font-family);
+}
+body h6 {
+    color: var(--bright-sun);
+    font-weight: 600;
+    font-family: var(--header-font-family);
+}
+
+
+/*****TEXT DECORATION*****/
+/*bold*/
+body strong {
+  color:var(--bold-sun); 
+  font-weight: 800;
+}
+
+/***lists***/
+body ul.todo-list li {
+    color: var(--sea-foam);
+}
+.ck-content .todo-list .todo-list__label>input[checked]:before{
+    background: var(--sea-green);
+    border-color: var(--sea-foam);
+    color: var(--background-gray);
+}
+.ck-content .todo-list .todo-list__label > input:before {
+    border: 1px solid var(--sea-foam) !important;
+}
+.ck-content .table>figcaption {
+    background-color: var(--supa-dark);
+    color: var(--darkened-sun);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--header-font-family);
+}
+table th {
+    font-weight: 600 !important;
+    font-family: var(--header-font-family);
+    font-size: 18px;
+}
+
+/***italics and quotes***/
+body i {
+    color:  var(--italic-lilac);
+}
+body blockquote{
+    color: var(--italic-lilac);
+}
+.ck-content blockquote {
+    overflow: hidden;
+    padding-right: 1.5em;
+    padding-left: .5em;
+    margin-left: 5em;
+    margin-right: 0;
+    font-style: italic;
+    border-left: 5px solid var(--border-lilac);
+}
+
+
+/*****ICONS*****/
+/*main note icon*/
+.note-icon::before {
+    color: var(--devils-gray-lol);
+}
+.note-icon:hover::before {
+    color: var(--bold-sun);
+    border-color: var(--bold-sun) !important; /*not working*/
+}
+.note-icon:focus::before, .bx-calendar:focus::before {
+    color: var(--bold-sun);
+}   
+.icon-list {
+    color: var(--shallow-sea-blue);
+}
+
+/***note properties menu***/
+.ribbon-tab-title-icon {
+     color: var(--devils-gray-lol);
+}
+.ribbon-tab-title-icon:hover {
+     color: var(--bold-sun);
+}
+
+/***left (side and bottom) and upper right menus***/
+.icon-action, .tree-floating-button {
+    color: var(--dim-sun) !important;
+}
+.icon-action:hover, .tree-floating-button:hover {
+    color: var(--bold-sun) !important;
+}
+
+/***tree***/
+/*note icon*/
+.fancytree-custom-icon {
+    color: var(--dim-sun);
+}
+span.fancytree-node.protected > span.fancytree-custom-icon {
+    filter: drop-shadow(2px 2px 2px var(--shallow-sea-blue));
+}
+/*drop down icon*/
+.fancytree-expander::before {
+    color: var(--devils-gray-lol);
+}
+
+/***Trilium icon***/
+body .global-menu-button {
+    background-image: url("/images/icon-grey.png");
+    color:var(--dim-sun); 
+}
+
+
+/*****INPUT FIELDS*****/
+/***password and options menu fields***/
+.form-control {
+    color: var(--text-gray) !important;
+}
+.form-control:focus {
+    color: var(--bright-sun) !important;
+    background-color: var(--supa-dark); 
+    border-color: var(--text-gray) !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
+}
+
+.note-title:focus {
+    color: var(--text-gray) !important;
+    background-color: var(--supa-dark) !important; 
+    border-color: var(--text-gray) !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
+}
+
+/***selection and find/replace (button)***/
+::selection {
+    color: var(--supa-dark);
+    background: var(--bold-sun);
+}
+span.ck-find-result, span.ck-find-result>.ck-find-result_selected {
+    color: var(--supa-dark);
+}
+
+
+/*****BUTTONS*****/
+.help-button {
+    color: hsl(15, 100%, 56%);
+}
+.help-button:hover {
+    color: var(--dim-sun);
+}
+
+/***primary and secondary buttons***/
+button:focus :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-button-cancel), .btn:focus {
+    color: var(--text-gray) !important;
+    background-color: var(--devils-gray-lol) !important; 
+    border-color: var(--text-gray) !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
+}
+button:hover :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-button-cancel), .btn:hover {
+    background-color: var(--supa-dark) !important; 
+    color: var(--bold-sun);
+    border-color: var(--bold-sun);
+}
+
+/***table sub-menu***/
+/*table field input label*/
+.ck.ck-labeled-field-view>.ck.ck-labeled-field-view__input-wrapper>.ck.ck-label{
+    background: var(--supa-dark);
+    color: var(--text-gray);
+}
+/*table field and button inputs*/
+.ck.ck-button:active, .ck.ck-button:focus, a.ck.ck-button:active, a.ck.ck-button:focus, .ck.ck-input-text:focus {
+    border: 1px solid var(--text-gray) !important;
+    box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important; 
+}
+.ck.ck-input-text[readonly]:focus {
+    border: 1px solid var(--ck-color-input-disabled-border) !important;
+    background: var(--ck-color-input-disabled-background) !important;
+    color: var(--ck-color-input-disabled-text) !important;
+}
+/*color button*/
+.ck.ck-input-color>.ck.ck-dropdown>.ck.ck-button.ck-input-color__button.ck-disabled, .ck.ck-input-color>.ck.ck-dropdown>.ck.ck-button.ck-input-color__button.ck-disabled>.ck.ck-input-color__button__preview, .ck.ck-input-color>.ck.ck-dropdown>.ck.ck-button.ck-input-color__button.ck-disabled>.ck.ck-input-color__button__preview>.ck.ck-input-color__button__preview__no-color-indicator {
+    border: 1px solid var(--ck-color-input-disabled-border) !important;
+}
+
+/*****NOTE MAP*****/
+.note-detail-relation-map path, .note-detail-relation-map .jtk-endpoint{
+    fill: var(--shallow-sea-blue) !important;
+}
+svg.jtk-connector path {
+    stroke: var(--shallow-sea-blue);
+    fill: none !important;
+}
+    
+
+/*****CODE IN TEXT NOTES)*****/
+/***code blocks***/
+.ck.ck-editor__editable pre {
+    background: var(--supa-dark); 
+    font-family: monospace;
+    font-size: 0.9rem;
+    border-color: var(--shallow-sea-blue); 
+}
+.ck-content pre code  {
+    font-family: monospace;
+    font-size: 0.9rem;
+    background: transparent !important; 
+    color: var(--shallow-sea-blue) !important; 
+}
+/*code block label*/
+pre::after{
+    background: var(--earth-sun) !important; 
+    color: var(--bright-sun) !important;
+    border-color: var(--bright-sun) !important;
+}
+
+/***inline code***/
+.ck.ck-editor__editable code  {
+    font-family:  monospace;
+    font-size: 0.9rem; 
+    background: var(--supa-dark); 
+    color: var(--shallow-sea-blue) !important; 
+}
+.ck.ck-editor__editable .ck-code_selected {
+    background-color: var(--earth-sun) !important;
+}
+
+
+/*****CKEDITOR*****/
+/******************************************************************
+NOTE: The following lines of code affect the editor menus. Similar to the General Styles section, the variables below are simply redefined here. 
+
+I've commented out the lines that don't seem to have an affect on anything, along with adding a question mark (?) in a comment to differentiate those lines from the rest of the code. They are left here in case anyone wants to experiment and figure out where those lines have an effect. If you find anything, please let me know so I can update the code ^_^
+******************************************************************/
+
+body {
+    /***overrides generic colors***/
+    --ck-color-base-text: var(--border-lilac); /*toggled color (editor sub-menu)*/
+    --ck-color-base-foreground: var(--midish-gray); /*tiny attached triangle and selection hover*/
+    --ck-color-focus-border: var(--bright-sun); /*table and color (editor menu) focus*/
+    --ck-color-text: var(--shallow-sea-blue); /*text color*/
+    /* --ck-color-shadow-drop: red; /*?*/
+    /* --ck-color-shadow-inner: red; /*?*/
+
+    /***overrides the default '.ck-button' class colors***/
+    /*general buttons*/
+    --ck-color-button-default-background: transparent;
+    --ck-color-button-default-hover-background: var(--midish-gray);
+    --ck-color-button-default-active-background: var(--devils-gray-lol);
+    --ck-color-button-default-active-shadow: var(--devils-gray-lol); /*thin line on top of active buttons*/
+    --ck-color-button-default-disabled-background:  var(--background-gray); /*disabled buttons*/
+ 
+    /*dropdown buttons*/
+    --ck-color-button-on-background: var(--earth-sun); /*active*/
+    --ck-color-button-on-hover-background: var(--midish-gray); /*hover*/
+    --ck-color-button-on-active-background: var(--devils-gray-lol); /*exit click on active*/
+    --ck-color-button-on-active-shadow: transparent; /*top line on exit click of active*/
+    /*--ck-color-button-on-disabled-background: red; /*?*/
+
+    /*find button (editor sub-menu)*/
+    --ck-color-button-action-background: var(--darkened-sun) !important;
+    --ck-color-button-action-hover-background: var(--devils-gray-lol) !important; 
+    --ck-color-button-action-active-background: var(--darkened-sun) !important; /*find button active and field descritpion*/
+    --ck-color-button-action-active-shadow: transparent !important; /*top line*/
+    /*--ck-color-button-action-disabled-background: red; /*?*/
+    --ck-color-button-action-text: var(--supa-dark) !important; /*find button(editor sub-menu)*/
+
+    /*save and cancel*/
+    --ck-color-button-save: var(--sea-green) /*hsl(120, 100%, 46%)*/; /*table sub-menu*/
+    --ck-color-button-cancel: hsl(15, 100%, 56%); /*table sub-menu*/
+
+    /***overrides the default '.ck-dropdown' class colors (color sub-menus)***/
+    --ck-color-dropdown-panel-background: var(--supa-dark);
+    --ck-color-dropdown-panel-border: var(--devils-gray-lol);
+
+    /***overrides the default '.ck-splitbutton' class colors***/
+    --ck-color-split-button-hover-background: var(--devils-gray-lol);
+    --ck-color-split-button-hover-border: var(--shallow-sea-blue);
+
+    /***overrides the default '.ck-input' class colors***/
+    /*--ck-color-input-background: red; /*?*/
+    --ck-color-input-border: var(--text-gray); /*inactive (enabled AND disabled) editable field(editor sub-menus)*/
+    /*--ck-color-input-text: red; /*?*/
+    --ck-color-input-disabled-background: var(--supa-dark); /*disabled color picker(table sub-menu)*/
+    --ck-color-input-disabled-border: var(--background-gray); /*disabled editor border (table sub-menu)*/
+    --ck-color-input-disabled-text: var(--text-gray); /*editor input text (enable AND disabled)*/
+
+    /***overrides the default '.ck-list' (list menus) class colors***/
+    --ck-color-list-background: transparent; /*focus out*/
+    --ck-color-list-button-hover-background: var(--midish-gray);
+    --ck-color-list-button-on-background:  var(--dim-sun); /*toggled/active*/
+    --ck-color-list-button-on-background-focus: var(--devils-gray-lol); /*hover on toggled/active*/
+    --ck-color-list-button-on-text: var(--supa-dark); /*toggled/active*/
+
+    /***overrides the default .ck-balloon-panel class colors (overall look and feel of the editor toolbars and sub-menus)***/
+    --ck-color-panel-background: var(--supa-dark);
+    --ck-color-panel-border: var(--devils-gray-lol);
+
+    /***overrides the default .ck-toolbar class colors***/
+    --ck-color-toolbar-background: var(--supa-dark); /*lots of overlap with the above backgound setting*/
+    --ck-color-toolbar-border: var(--dim-sun); /*section separators*/
+
+    /***overrides the default .ck-tooltip class colors***/
+    --ck-color-tooltip-background: var(--bold-sun); 
+    --ck-color-tooltip-text: var(--background-gray);
+
+    /* Overrides the default colors used by the ckeditor5-image package.*/
+    /*--ck-color-image-caption-background: red; /*?*/
+    /*--ck-color-image-caption-text: red; /*?*/
+
+    /***overrides the default colors used by the ckeditor5-widget (image/table) package***/
+    --ck-color-widget-blurred-border: var(--devils-gray-lol); /*shows up briefly after switching tabs*/
+    --ck-color-widget-hover-border: var(--dim-sun); /*object in focus*/
+    --ck-color-widget-editable-focus-background: var(--midish-gray); /*table caption in focus*/
+
+    /***overrides the default colors used by the ckeditor5-link package***/
+    /*--ck-color-link-default: red; /*this is overridden by a link setting set earlier in the code*/
+
+    --ck-color-table-focused-cell-background: var(--midish-gray);
+
+    /*--ck-color-todo-list-checkmark-border: red; /*?*/
+
+    --ck-color-engine-placeholder-text: var(--text-gray); /*caption placeholder text*/
+
+    --ck-z-modal: 10000;
+
+    /*--ck-color-widget-type-around-button: red; /*?*/
+    --ck-color-widget-type-around-button-hover: var(--darkened-sun); /*applies when table/image is in focus*/
+}
+    
+    
+/*****CODEMIRROR****/
+/******************************************************************
+NOTE: comments for this section are for how they appear in CSS code notes unless otherwise noted. All code notes have the same color theme, but the application may be different. Some elements are affected the same way accross all code notes (i.e. all strings appear the same across code notes and as do comments, variables, and functions).
+******************************************************************/
+
+/***general appearance***/
+/*'...line' is for regular code notes text, not sure what '...line-like' is for*/
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
+    color: var(--text-gray); 
+} 
+
+.CodeMirror-linenumber {color: var(--devils-gray-lol);} 
+.CodeMirror-cursor {
+    border-left: 1px solid var(--devils-gray-lol);
+}
+
+/***highlighted and selected text in code notes***/
+.CodeMirror-selected {
+   background-color: var(--supa-dark);
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background-color: var(--supa-dark);
+}
+.cm-s-default .cm-matchhighlight{
+    background-color: #030016;
+}
+
+/***general elements***/
+.cm-s-default .cm-atom {color: #ea5474;} /*fonts and colors (code not words)*/
+.cm-s-default .cm-def {color: #5df7e8;} /*@*/
+.cm-s-default .cm-qualifier {color:  #269b4d;} /*class*/
+.cm-s-default .cm-builtin {color: #9368f7;} /*id-selectors*/
+.cm-s-default .cm-tag {color: #06dd87;} /*html tags*/
+.cm-s-default .cm-meta {color: #777;}  /*meta (browser compatability) tags*/
+.cm-s-default .cm-comment {color: #a57489;} /*comments*/
+.cm-s-default .cm-number {color: #ea5474;} /*numbers including units, not including color codes*/
+.cm-s-default .cm-keyword {color: #ed363c;} /*color names and keywords*/
+
+/***variables***/
+/*a lot of overlap with .cm-s-default .cm-atom. Might be good to separate these if you want to style them individually*/
+.cm-s-default .cm-variable,
+.cm-s-default .cm-punctuation,
+.cm-s-default .cm-property,
+.cm-s-default .cm-operator {}
+.cm-s-default .cm-variable-2 {color: #08a;} /*custom properties and php variables*/
+.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #01ad6e;} /*pseudo elements and classes*/
+
+/***strings***/
+.cm-s-default .cm-string {color: #f7b2b2;} 
+.cm-s-default .cm-string-2 {color: #fc7462;} /*applies to some CSS properties*/
+
+/***brackets and parentheses***/
+div.CodeMirror span.CodeMirror-matchingbracket {color: #01ba3f;}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #c60101;}
+
+/***code errors***/
+.cm-s-default .cm-error {color: #f00;}
+.cm-invalidchar {color: #f00;}
