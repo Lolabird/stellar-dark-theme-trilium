@@ -1,6 +1,7 @@
-# stellar-dark-theme-trilium
+# Stellar Dark Theme 
 Dark theme for Trilium Notes (https://github.com/zadam/trilium)
 
+## Usage Instructions
 - Download the latest version of Trilium 
 - Create a new CSS code note
 - Title the note 'Stellar Dark'
