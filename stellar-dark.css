@@ -108,6 +108,9 @@ html {
     --active-tab-text-color: var(--background-gray);
     --inactive-tab-background-color: var(--midish-gray);
     --inactive-tab-text-color: var(--text-gray);
+    --active-tab-hover-background-color: var(--text-gray);
+    --inactive-tab-hover-background-color: var(--earth-sun);
+    
 
     /*general*/
     --scrollbar-border-color: var(--dim-sun);
@@ -331,7 +334,35 @@ svg.jtk-connector path {
     stroke: var(--shallow-sea-blue);
     fill: none !important;
 }
-    
+
+/*****BACKLINKS POPUP*****/
+div.backlinks-items {
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: var(--supa-dark);
+    color: var(--text-gray);
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 2px 5px  var(--text-gray);
+}
+.backlink-excerpt .backlink-link {
+     background-color: var(--midish-gray) !important;
+}
+.backlink-excerpt:hover {
+    background-color: var(--earth-sun);
+}
+.backlinks-ticker:hover {
+    background-color: var(--earth-sun);
+}
+
+.nav-link.active:hover {
+    background-color: var(--earth-sun) !important;
+}
+
 
 /*****CODE IN TEXT NOTES)*****/
 /***code blocks***/
