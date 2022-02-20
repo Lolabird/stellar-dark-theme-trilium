@@ -349,15 +349,16 @@ div.backlinks-items {
     overflow-y: auto;
     box-shadow: 2px 2px 5px  var(--text-gray);
 }
+div.backlinks-items div:hover {
+    background-color: var(--earth-sun);
+}
 .backlink-excerpt .backlink-link {
      background-color: var(--midish-gray) !important;
-}
-.backlink-excerpt:hover {
-    background-color: var(--earth-sun);
 }
 .backlinks-ticker:hover {
     background-color: var(--earth-sun);
 }
+
 
 
 
