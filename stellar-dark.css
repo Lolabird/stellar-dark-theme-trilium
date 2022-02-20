@@ -359,9 +359,6 @@ div.backlinks-items {
     background-color: var(--earth-sun);
 }
 
-.nav-link.active:hover {
-    background-color: var(--earth-sun) !important;
-}
 
 
 /*****CODE IN TEXT NOTES)*****/
