@@ -359,7 +359,10 @@ div.backlinks-items div:hover {
     background-color: var(--earth-sun);
 }
 
-
+/*****Attributes Popup*****/
+.attr-help td {
+    color: var(--text-gray) !important;
+}
 
 
 /*****CODE IN TEXT NOTES)*****/
