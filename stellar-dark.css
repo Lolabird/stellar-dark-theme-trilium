@@ -125,14 +125,14 @@ html {
 .tab-row-widget .note-tab .note-tab-wrapper {
     height: 46px !important;
     font-size: var(--detail-font-size);
+    font-family: var(--header-font-family);
 }
-
 
 /*****TOC*****/
 .toc-widget{
     overflow: visible !important;
+    font-size: var(--tree-font-size);
 }
-
 
 /*****HEADERS*****/
 /*h1 is not defined, because it's not currently an option for headers in the main body*/
@@ -279,6 +279,10 @@ body .global-menu-button {
     box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
 }
 
+.note-title-widget input.note-title {
+    font-family: var(--header-font-family);
+    font-size: 200% !important;
+}
 .note-title:focus {
     color: var(--text-gray) !important;
     background-color: var(--supa-dark) !important; 
