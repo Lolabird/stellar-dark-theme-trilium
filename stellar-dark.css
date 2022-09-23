@@ -35,18 +35,18 @@ html {
 
     /***fonts***/
     /*general fonts*/
-    --main-font-family: MontserratLight;
-    --main-font-size: normal;
+    --main-font-family: sans-serif;
+    --main-font-size: 16px;
 
-    --tree-font-family: MontserratLight;
-    --tree-font-size: normal;
+    --tree-font-family: serif;
+    --tree-font-size: 18px;
 
-    --detail-font-family: MontserratLight;
-    --detail-font-size: normal;
+    --detail-font-family: sans-serif;
+    --detail-font-size: 20px;
 
    /*code fonts*/
     --monospace-font-family: monospace;
-    --monospace-font-size: normal;
+    --monospace-font-size: 16px;
 
     /***colors***/
     /*main notes window*/
@@ -121,6 +121,14 @@ html {
 }
 
 
+/*****TABS*****/
+.tab-row-widget .note-tab .note-tab-wrapper {
+    height: 46px !important;
+    font-size: var(--detail-font-size);
+}
+
+
+
 /*****HEADERS*****/
 /*h1 is not defined, because it's not currently an option for headers in the main body*/
 body h2 {
@@ -148,6 +156,7 @@ body h6 {
     font-weight: 600;
     font-family: var(--header-font-family);
 }
+
 
 
 /*****TEXT DECORATION*****/
@@ -363,7 +372,6 @@ div.backlinks-items div:hover {
 .attr-help td {
     color: var(--text-gray) !important;
 }
-
 
 /*****CODE IN TEXT NOTES)*****/
 /***code blocks***/
