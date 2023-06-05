@@ -262,7 +262,7 @@ span.fancytree-node.protected > span.fancytree-custom-icon {
 
 /***Trilium icon***/
 body .global-menu-button {
-    background-image: url("/images/icon-grey.png");
+    background-image: url("/assets/vX/images/icon-grey.png");
     color:var(--dim-sun); 
 }
 
