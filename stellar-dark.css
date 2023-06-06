@@ -129,6 +129,11 @@ html {
     font-family: var(--header-font-family);
 }
 
+/*fixes the issue of not being able to access widgets in the top bar*/
+.tab-row-filler {
+    -webkit-app-region: none !important;
+}
+
 /*****TOC*****/
 .toc-widget{
     overflow: visible !important;
