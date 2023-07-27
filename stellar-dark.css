@@ -24,7 +24,6 @@ Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
     --shallow-sea-blue: #54bcba;
     --header-font-family: Lucida Console, Monaco, sans-serif;
     --code-select-gray: #333;
-    --launcher-gray: #969573;
 }
 
 
@@ -103,7 +102,7 @@ html {
 
     /*left and bottom left menus*/
     --launcher-pane-background-color: var(--background-gray);
-    --launcher-pane-text-color: var(--launcher-gray);/*doesn't seem to to do anything and is covered by other properties*/
+    --launcher-pane-text-color: var(--dim-sun);
 
     /*tabs*/
     --active-tab-background-color: var(--bold-sun);
@@ -256,6 +255,12 @@ body blockquote{
 .icon-action:hover, .tree-floating-button:hover {
     color: var(--bold-sun) !important;
 }
+.top-btn button, .minimize-btn button, .maximize-btn button, .close-btn button{
+    color: var(--dim-sun) !important;
+}
+.top-btn button:hover, .minimize-btn button:hover, .maximize-btn button:hover, .close-btn button:hover{
+    color: var(--bold-sun) !important;
+}
 
 /***tree***/
 /*note icon*/
@@ -273,7 +278,6 @@ span.fancytree-node.protected > span.fancytree-custom-icon {
 /***Trilium icon***/
 body .global-menu-button {
     background-image: url("/assets/vX/images/icon-grey.png");
-    color:var(--dim-sun); 
 }
 
 
