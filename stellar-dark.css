@@ -24,6 +24,7 @@ Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
     --shallow-sea-blue: #54bcba;
     --header-font-family: Lucida Console, Monaco, sans-serif;
     --code-select-gray: #333;
+    --launcher-gray: #969573;
 }
 
 
@@ -102,7 +103,7 @@ html {
 
     /*left and bottom left menus*/
     --launcher-pane-background-color: var(--background-gray);
-    --launcher-pane-text-color: var(--text-gray);/*doesn't seem to to do anything and is covered by other properties*/
+    --launcher-pane-text-color: var(--launcher-gray);/*doesn't seem to to do anything and is covered by other properties*/
 
     /*tabs*/
     --active-tab-background-color: var(--bold-sun);
@@ -121,6 +122,10 @@ html {
     --mermaid-theme: default;
 }
 
+/*****Scrollbar*****/
+::-webkit-scrollbar-thumb{
+    background-color: transparent !important;
+}
 
 /*****TABS*****/
 .tab-row-widget .note-tab .note-tab-wrapper {
