@@ -125,6 +125,9 @@ html {
 ::-webkit-scrollbar-thumb{
     background-color: transparent !important;
 }
+::-webkit-scrollbar-thumb:hover{
+    border-color: var(--bright-sun) !important;
+}
 
 /*****TABS*****/
 .tab-row-widget .note-tab .note-tab-wrapper {
@@ -249,18 +252,15 @@ body blockquote{
 }
 
 /***left (side and bottom) and upper right menus***/
-.icon-action, .tree-floating-button {
+.icon-action, .tree-floating-button, .top-btn button, .minimize-btn button, .maximize-btn button, .close-btn button {
     color: var(--dim-sun) !important;
 }
-.icon-action:hover, .tree-floating-button:hover {
+.icon-action:hover, .tree-floating-button:hover, .top-btn button:hover, .minimize-btn button:hover, .maximize-btn button:hover, .close-btn button:hover, button.button-widget:hover, .sync-status-widget:hover {
     color: var(--bold-sun) !important;
+    border: none !important; 
+    background: var(--supa-dark);
 }
-.top-btn button, .minimize-btn button, .maximize-btn button, .close-btn button{
-    color: var(--dim-sun) !important;
-}
-.top-btn button:hover, .minimize-btn button:hover, .maximize-btn button:hover, .close-btn button:hover{
-    color: var(--bold-sun) !important;
-}
+
 
 /***tree***/
 /*note icon*/
