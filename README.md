@@ -11,5 +11,5 @@ Dark theme for Trilium Notes (https://github.com/zadam/trilium)
 - Enjoy!
 
 ## Screenshots
-![Theme Showcase](https://user-images.githubusercontent.com/89228316/197414067-b8d532fa-2e3f-4098-a64c-733dcbb9be54.png)
+![Theme Showcase](/screenshots/New_Screenshot_1.png)
 ![Showcase Backlinks](https://user-images.githubusercontent.com/89228316/154849889-2fdd33b9-d22d-4936-9863-d2740fcf984f.png)
