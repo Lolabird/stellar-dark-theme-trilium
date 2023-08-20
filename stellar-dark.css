@@ -160,29 +160,53 @@ body h2 {
     font-family: var(--header-font-family);
     font-size: 2rem !important;
 }
+body h2 code {
+    font-size: 1.9rem !important;
+    background: transparent !important;
+}
+
 body h3 {
     color: var(--bright-sun);
     font-weight: 700;
     font-family: var(--header-font-family);
     font-size: 1.9rem !important;
 }
+body h3 code {
+    font-size: 1.78rem !important;
+    background: transparent !important;
+}
+
 body h4 {
     color: var(--bright-sun);
     font-weight: 600;
     font-family: var(--header-font-family);
     font-size: 1.78rem !important;
 }
+body h4 code {
+    font-size: 1.65rem !important;
+    background: transparent !important;
+}
+
 body h5 {
     color: var(--bright-sun);
     font-weight: 600;
     font-family: var(--header-font-family);
     font-size: 1.65rem !important;
 }
+body h5 code {
+    font-size: 1.53rem !important;
+    background: transparent !important;
+}
+
 body h6 {
     color: var(--bright-sun);
     font-weight: 600;
     font-family: var(--header-font-family);
     font-size: 1.53rem !important;
+}
+body h6 code {
+    font-size: 1.4rem !important;
+    background: transparent !important;
 }
 
 
@@ -440,6 +464,7 @@ pre::after{
 .ck-content .ck-code_selected {
     background-color: var(--earth-sun) !important;
 }
+
 
 
 /*****CKEDITOR*****/
