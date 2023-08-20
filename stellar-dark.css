@@ -411,7 +411,7 @@ div.backlinks-items div:hover {
 
 /*****CODE IN TEXT NOTES)*****/
 /***code blocks***/
-.ck.ck-editor__editable pre {
+.ck-content pre {
     background: var(--supa-dark); 
     font-family: monospace;
     font-size: 0.9rem;
@@ -431,13 +431,13 @@ pre::after{
 }
 
 /***inline code***/
-.ck.ck-editor__editable code  {
+.ck-content code  {
     font-family:  monospace;
     font-size: 0.9rem; 
     background: var(--supa-dark); 
     color: var(--shallow-sea-blue) !important; 
 }
-.ck.ck-editor__editable .ck-code_selected {
+.ck-content .ck-code_selected {
     background-color: var(--earth-sun) !important;
 }
 
