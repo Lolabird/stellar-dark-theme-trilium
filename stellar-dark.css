@@ -455,9 +455,9 @@ pre::after{
 }
 
 /***inline code***/
-.ck-content code  {
+.ck-content code, .ck-content code i, .ck-content code strong  {
     font-family:  monospace;
-    font-size: 0.9rem; 
+    font-size: 1.1rem; 
     background: var(--supa-dark); 
     color: var(--shallow-sea-blue) !important; 
 }
