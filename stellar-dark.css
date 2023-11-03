@@ -209,6 +209,10 @@ body h6 code {
     background: transparent !important;
 }
 
+/*****TEXT*****/
+p {
+    letter-spacing: 1.2px;
+}
 
 /*****TABLE*****/
 .ck-content .table>figcaption {
