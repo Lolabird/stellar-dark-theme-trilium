@@ -11,6 +11,6 @@ Dark theme for Trilium Notes (https://github.com/zadam/trilium)
 - Enjoy!
 
 ## Screenshots
-![Theme Showcase](/screenshots/New_Screenshot_1.png)
-![Showcase Backlinks, Highlights and TOC](/screenshots/New_Screenshot_2.png)
-![Showcase Colors on Options](/screenshots/Options_Screenshot.png)
+![Theme Showcase](/screenshots/StellarDark_Screenshot.png)
+![Showcase Backlinks and Map](/screenshots/Showcase_map.png)
+![Showcase Colors on Options](/screenshots/Options.png)
