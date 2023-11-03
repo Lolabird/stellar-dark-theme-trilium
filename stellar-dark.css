@@ -210,6 +210,22 @@ body h6 code {
 }
 
 
+/*****TABLE*****/
+.ck-content .table>figcaption {
+    background-color: var(--supa-dark);
+    color: var(--darkened-sun);
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: var(--header-font-family);
+}
+table th {
+    font-weight: 600 !important;
+    font-family: var(--header-font-family);
+    font-size: 1.15rem;
+}
+tr:nth-child(even) {
+    background-color: var(--code-select-gray);
+}
 
 /*****TEXT DECORATION*****/
 /*bold*/
@@ -229,18 +245,6 @@ body ul.todo-list li {
 }
 .ck-content .todo-list .todo-list__label > input:before {
     border: 1px solid var(--sea-foam) !important;
-}
-.ck-content .table>figcaption {
-    background-color: var(--supa-dark);
-    color: var(--darkened-sun);
-    font-size: 1.3rem;
-    font-weight: 600;
-    font-family: var(--header-font-family);
-}
-table th {
-    font-weight: 600 !important;
-    font-family: var(--header-font-family);
-    font-size: 1.15rem;
 }
 
 /***italics and quotes***/
@@ -445,7 +449,7 @@ div.backlinks-items div:hover {
     font-family: monospace;
     font-size: 0.9rem;
     background: transparent !important; 
-    color: var(--shallow-sea-blue) !important; 
+    color: var(--shallow-sea-blue) !important;
 }
 /*code block label*/
 pre::after{
@@ -459,7 +463,7 @@ pre::after{
     font-family:  monospace;
     font-size: .95rem; 
     background: var(--supa-dark); 
-    color: var(--shallow-sea-blue) !important; 
+    color: var(--shallow-sea-blue) !important;
 }
 .ck-content .ck-code_selected {
     background-color: var(--earth-sun) !important;
