@@ -158,7 +158,6 @@ html {
     margin-bottom: 1.1rem !important;
 }
 
-
 /*****HEADERS*****/
 /*h1 is not defined, because it's not currently an option for headers in the main body*/
 body h2 {
@@ -256,6 +255,10 @@ body strong {
 /***lists***/
 body ul.todo-list li {
     color: var(--sea-foam);
+}
+li label {
+    display: inline;
+    line-height: 2rem;
 }
 .ck-content .todo-list .todo-list__label>input[checked]:before{
     background: var(--sea-green);
@@ -372,8 +375,8 @@ body .global-menu-button {
 
 /***selection and find/replace (button)***/
 /*::selection {
-    color: var(--supa-dark);
-    background: var(--bold-sun);
+    color: var(--supa-dark) !important;
+    background: var(--bold-sun) !important;
 }*/
 span.ck-find-result, span.ck-find-result>.ck-find-result_selected {
     color: var(--supa-dark);
