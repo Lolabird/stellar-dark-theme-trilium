@@ -153,6 +153,12 @@ html {
     font-size: var(--tree-font-size);
 }
 
+/*****Included Notes*****/
+.include-note {
+    margin-bottom: 1.1rem !important;
+}
+
+
 /*****HEADERS*****/
 /*h1 is not defined, because it's not currently an option for headers in the main body*/
 body h2 {
