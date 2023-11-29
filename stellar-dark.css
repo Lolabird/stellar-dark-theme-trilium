@@ -374,10 +374,10 @@ body .global-menu-button {
 }
 
 /***selection and find/replace (button)***/
-/*::selection {
-    color: var(--supa-dark) !important;
-    background: var(--bold-sun) !important;
-}*/
+::selection {
+    color: black !important /*var(--supa-dark)*/;
+    background: #fcfbb3 !important /*var(--bold-sun)*/;
+}
 span.ck-find-result, span.ck-find-result>.ck-find-result_selected {
     color: var(--supa-dark);
 }
