@@ -48,7 +48,7 @@ html {
 
    /*code fonts*/
     --monospace-font-family: monospace;
-    --monospace-font-size: 1.1rem;
+    --monospace-font-size: 1.2rem;
 
     /***colors***/
     /*main notes window*/
@@ -140,6 +140,13 @@ html {
     height: 46px !important;
     font-size: var(--detail-font-size);
     font-family: var(--header-font-family);
+}
+.tab-row-widget .note-tab .note-tab-title {
+    font-size: 1.5rem;
+}
+.tab-row-widget .note-tab .note-tab-close {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 /*fixes the issue of not being able to access widgets in the top bar*/
