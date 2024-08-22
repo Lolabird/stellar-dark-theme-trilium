@@ -38,13 +38,13 @@ html {
     /***fonts***/
     /*general fonts*/
     --main-font-family: sans-serif;
-    --main-font-size: 1.2em;
+    --main-font-size: 1.2rem;
 
     --tree-font-family: serif;
     --tree-font-size: 1.3rem;
 
     --detail-font-family: sans-serif;
-    --detail-font-size: 1.5rem;
+    --detail-font-size: 1.1rem;
 
    /*code fonts*/
     --monospace-font-family: monospace;
