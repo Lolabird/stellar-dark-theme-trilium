@@ -44,7 +44,7 @@ html {
     --tree-font-size: 1.3rem;
 
     --detail-font-family: sans-serif;
-    --detail-font-size: 1rem;
+    --detail-font-size: 1.3rem;
 
    /*code fonts*/
     --monospace-font-family: monospace;
@@ -226,10 +226,6 @@ body h6 code {
 /*****TEXT*****/
 *{
     letter-spacing: 1.2px;
-}
-
-p{
-    font-size: 1.3rem;
 }
 
 
