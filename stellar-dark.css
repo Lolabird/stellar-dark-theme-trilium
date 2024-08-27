@@ -159,6 +159,9 @@ html {
     overflow: visible !important;
     font-size: var(--tree-font-size);
 }
+.toc-widget .toc li {
+    text-align: left;
+}
 
 /*****Included Notes*****/
 .include-note {
