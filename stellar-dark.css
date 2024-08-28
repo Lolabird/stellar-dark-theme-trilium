@@ -351,6 +351,10 @@ span.fancytree-node.protected > span.fancytree-custom-icon {
 .fancytree-expander::before {
     color: var(--devils-gray-lol);
 }
+/*tree action buttons*/
+button.tree-floating-button {
+    font-size: 1.5rem !important;
+}
 
 /***Trilium icon***/
 body .global-menu-button {
