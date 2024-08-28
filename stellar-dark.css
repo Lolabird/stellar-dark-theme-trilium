@@ -371,9 +371,13 @@ body .global-menu-button {
     box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
 }
 
+.component.title-row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .note-title-widget input.note-title {
     font-family: var(--header-font-family);
-    font-size: 200% !important;
+    font-size: 180% !important;
 }
 .note-title:focus {
     color: var(--text-gray) !important;
@@ -382,6 +386,7 @@ body .global-menu-button {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(252 251 179 / 50%) !important;
 }
+
 
 /***selection and find/replace (button)***/
 ::selection {
