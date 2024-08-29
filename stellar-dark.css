@@ -447,6 +447,13 @@ button:hover :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-butt
 .ck.ck-input-color>.ck.ck-dropdown>.ck.ck-button.ck-input-color__button.ck-disabled, .ck.ck-input-color>.ck.ck-dropdown>.ck.ck-button.ck-input-color__button.ck-disabled>.ck.ck-input-color__button__preview, .ck.ck-input-color>.ck.ck-dropdown>.ck.ck-button.ck-input-color__button.ck-disabled>.ck.ck-input-color__button__preview>.ck.ck-input-color__button__preview__no-color-indicator {
     border: 1px solid var(--ck-color-input-disabled-border) !important;
 }
+/*image caption field*/
+.ck .ck-editor__nested-editable.ck-editor__nested-editable_focused, .ck .ck-editor__nested-editable:focus {
+    background-color: var(--ck-color-widget-editable-focus-background);
+    border: none /*var(--ck-focus-ring)*/;
+    box-shadow: var(--ck-inner-shadow),0 0;
+    outline: none;
+}
 
 
 /*****NOTE MAP*****/
