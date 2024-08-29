@@ -547,6 +547,7 @@ body {
     --ck-color-button-default-active-background: var(--devils-gray-lol);
     --ck-color-button-default-active-shadow: var(--devils-gray-lol); /*thin line on top of active buttons*/
     --ck-color-button-default-disabled-background:  var(--background-gray); /*disabled buttons*/
+    --ck-color-button-on-color: var(--bright-sun); /*selected property/button*/
 
     /*dropdown buttons*/
     --ck-color-button-on-background: var(--earth-sun); /*active*/
