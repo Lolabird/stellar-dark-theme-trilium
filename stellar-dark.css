@@ -397,8 +397,12 @@ body .global-menu-button {
     color: black !important /*var(--supa-dark)*/;
     background: #fcfbb3 !important /*var(--bold-sun)*/;
 }
-span.ck-find-result, span.ck-find-result>.ck-find-result_selected {
-    color: var(--supa-dark);
+span.ck-find-result {
+    background: var(--code-select-gray);
+}
+span.ck-find-result_selected {
+    color: var(--supa-dark) !important;
+    background: var(--bright-sun);
 }
 
 
@@ -662,6 +666,7 @@ NOTE: comments for this section are for how they appear in CSS code notes unless
 .cm-s-default .cm-comment {color: #a57489;} /*comments*/
 .cm-s-default .cm-number {color: #ea5474;} /*numbers including units, not including color codes*/
 .cm-s-default .cm-keyword {color: #ed363c;} /*color names and keywords*/
+.cm-s-default .cm-attribute {color: #CBEAD9;} /*print keyword*/
 
 /***variables***/
 /*a lot of overlap with .cm-s-default .cm-atom. Might be good to separate these if you want to style them individually*/
