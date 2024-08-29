@@ -5,7 +5,7 @@ Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
 ******************************************************************/
 /*****ROOT (COLOR AND FONT KEY)*****/
 :root{
-    /***main body (including CKEditor), modal(options menu), and some code colors (see last section for more code colors)*/
+    /***main body (including CKEditor), modal(options menu), and some code colors (see last section for more code colors)***/
     --text-gray: lightgray;
     --devils-gray-lol: #666;
     --background-gray: #111;
@@ -498,12 +498,10 @@ div.backlinks-items div:hover {
 /***code blocks***/
 .ck-content pre {
     background: var(--supa-dark);
-    font-family: monospace;
     font-size: 0.9rem;
     border-color: var(--shallow-sea-blue);
 }
 .ck-content pre code  {
-    font-family: monospace;
     font-size: 0.9rem;
     background: transparent !important;
     color: var(--shallow-sea-blue) !important;
@@ -518,7 +516,6 @@ pre::after{
 
 /***inline code***/
 .ck-content code, .ck-content code i, .ck-content code strong  {
-    font-family:  monospace;
     font-size: .95rem;
     background: var(--supa-dark);
     color: var(--shallow-sea-blue) !important;
