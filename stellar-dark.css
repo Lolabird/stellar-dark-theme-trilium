@@ -185,7 +185,6 @@ body h2 code {
     font-size: 1.9rem !important;
     background: transparent !important;
 }
-
 body h3 {
     color: var(--bright-sun);
     font-weight: 700;
@@ -196,7 +195,6 @@ body h3 code {
     font-size: 1.78rem !important;
     background: transparent !important;
 }
-
 body h4 {
     color: #6cccca;
     font-weight: 600;
@@ -207,7 +205,6 @@ body h4 code {
     font-size: 1.65rem !important;
     background: transparent !important;
 }
-
 body h5 {
     color: #99cccb;
     font-weight: 600;
@@ -218,7 +215,6 @@ body h5 code {
     font-size: 1.53rem !important;
     background: transparent !important;
 }
-
 body h6 {
     color: #99ccb1;
     font-weight: 600;
