@@ -25,6 +25,7 @@ Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
     --header-font-family: Lucida Console, Monaco, sans-serif;
     --code-select-gray: #333;
     --table-header-gray: #222;
+    --soft-red: #ed363c;
 }
 
 
@@ -149,6 +150,10 @@ html {
 .tab-row-widget .note-tab .note-tab-close {
     font-size: 1.5rem;
     margin-bottom: 10px;
+}
+.note-tab div.note-tab-close.bx.bx-x:hover {
+    background: transparent;
+    color: var(--soft-red);
 }
 
 /*fixes the issue of not being able to access widgets in the top bar*/
@@ -672,7 +677,7 @@ NOTE: comments for this section are for how they appear in CSS code notes unless
 .cm-s-default .cm-meta {color: #777;}  /*meta (browser compatability) tags*/
 .cm-s-default .cm-comment {color: #a57489;} /*comments*/
 .cm-s-default .cm-number {color: #ea5474;} /*numbers including units, not including color codes*/
-.cm-s-default .cm-keyword {color: #ed363c;} /*color names and keywords*/
+.cm-s-default .cm-keyword {color: var(--soft-red);} /*color names and keywords*/
 .cm-s-default .cm-attribute {color: #CBEAD9;} /*print keyword*/
 
 /***variables***/
