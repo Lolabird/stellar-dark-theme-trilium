@@ -167,7 +167,7 @@ html {
     overflow: visible !important;
     font-size: var(--tree-font-size);
 }
-.toc-widget .toc li {
+.toc-widget .toc li, .highlights-list > ol > li {
     text-align: left;
 }
 
