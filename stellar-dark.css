@@ -29,6 +29,15 @@ Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
     --code-comment: #a57489;
     --code-tag: #06dd87;
     --code-string: #f7b2b2;
+    --code-number: #ea5474;
+    --code-pseudo: #01ad6e;
+    --code-class: #269b4d;
+    --code-keyword: var(--soft-red);
+    --code-meta: #777;
+    --code-def: #5df7e8;
+    --code-var: #08a;
+    --code-builtin: #9368f7;
+    --code-attribute: #CBEAD9;
 }
 
 
@@ -681,29 +690,26 @@ NOTE: comments for this section are for how they appear in CSS code notes unless
 }
 
 /***general elements***/
-.cm-s-default .cm-atom {color: #ea5474;} /*fonts and colors (code not words)*/
-.cm-s-default .cm-def {color: #5df7e8;} /*@*/
-.cm-s-default .cm-qualifier {color:  #269b4d;} /*class*/
-.cm-s-default .cm-builtin {color: #9368f7;} /*id-selectors*/
+.cm-s-default .cm-atom {color: var(--code-number);} /*fonts and colors (code not words)*/
+.cm-s-default .cm-def {color: var(--code-def);} /*@ and class definitions (php)*/
+.cm-s-default .cm-qualifier {color: var(--code-class);} /*class*/
+.cm-s-default .cm-builtin {color: var(--code-builtin);} /*id-selectors*/
 .cm-s-default .cm-tag {color: var(--code-tag);} /*html tags*/
-.cm-s-default .cm-meta {color: #777;}  /*meta (browser compatability) tags*/
+.cm-s-default .cm-meta {color: var(--code-meta);}  /*meta (browser compatability) tags*/
 .cm-s-default .cm-comment {color: var(--code-comment);} /*comments*/
-.cm-s-default .cm-number {color: #ea5474;} /*numbers including units, not including color codes*/
-.cm-s-default .cm-keyword {color: var(--soft-red);} /*color names and keywords*/
-.cm-s-default .cm-attribute {color: #CBEAD9;} /*print keyword*/
+.cm-s-default .cm-number {color: var(--code-number);} /*numbers including units, not including color codes*/
+.cm-s-default .cm-keyword {color: var(--code-keyword);} /*color names and keywords*/
+.cm-s-default .cm-attribute {color: var(--code-attribute);} /*print keyword*/
 
 /***variables***/
-/*a lot of overlap with .cm-s-default .cm-atom. Might be good to separate these if you want to style them individually*/
-.cm-s-default .cm-variable,
-.cm-s-default .cm-punctuation,
-.cm-s-default .cm-property,
-.cm-s-default .cm-operator {}
-.cm-s-default .cm-variable-2 {color: #08a;} /*custom properties and php variables*/
-.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #01ad6e;} /*pseudo elements and classes*/
+.cm-s-default .cm-punctuation, .cm-s-default .cm-operator {}
+.cm-s-default .cm-property{color: var(--code-attribute);}
+.cm-s-default .cm-variable, .cm-s-default .cm-variable-2 {color: var(--code-var);} /*custom properties and php variables*/
+.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: var(--code-pseudo);} /*pseudo elements and classes*/
 
 /***strings***/
 .cm-s-default .cm-string {color: var(--code-string);}
-.cm-s-default .cm-string-2 {color: var(--code-string);} /*applies to some CSS properties*/
+.cm-s-default .cm-string-2 {color: var(--code-string);} /*Regex and strings that can contain other strings*/
 
 /***brackets and parentheses***/
 div.CodeMirror span.CodeMirror-matchingbracket {color: #01ba3f;}
@@ -714,33 +720,57 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #c60101;}
 .cm-invalidchar {color: #f00;}
 
 
-/*****HIGHLIGHT.JS****/
+/*****HIGHLIGHT.JS*****/
 pre code.hljs {
     display:block;
     overflow-x:auto;
-    padding:1em
+    padding:1em;
 }
 code.hljs {
-    padding:3px 5px
+    padding:3px 5px;
 }
 .hljs{
     background:#fff;
-    color:turquoise !important;
+    color: yellow !important;
 }
-.hljs-comment,.hljs-quote,.hljs-variable {
+.hljs-number {
+    color: var(--code-number) !important;
+}
+.hljs-selector-class {
+    color: var(--code-class) !important;
+}
+.hljs-selector-pseudo {
+    color: var(--code-pseudo) !important;
+}
+.hljs-keyword {
+    color: var(--code-keyword) !important;
+}
+.hljs-meta {
+    color: var(--code-meta) !important;
+}
+.hljs-title,.hljs-property {
+    color: var(--code-def) !important;
+}
+.hljs-variable,.hljs-params,.hljs-subst {
+    color: var(--code-var) !important;
+}
+.hljs-comment,.hljs-quote {
     color: var(--code-comment) !important;
 }
-.hljs-built_in,.hljs-keyword,.hljs-name,.hljs-selector-tag,.hljs-tag {
+.hljs-name,.hljs-selector-tag,.hljs-tag,.hljs-deletion,.hljs-selector-attr {
     color: var(--code-tag) !important;
 }
-.hljs-addition,.hljs-attribute,.hljs-literal,.hljs-section,.hljs-string,.hljs-template-tag,.hljs-template-variable,.hljs-title,.hljs-type {
+.hljs-attribute {
+    color: var(--code-attribute) !important;
+}
+.hljs-addition,.hljs-literal,.hljs-section,.hljs-string,.hljs-template-tag,.hljs-template-variable,.hljs-type {
     color: var(--code-string) !important;
 }
-.hljs-deletion,.hljs-meta,.hljs-selector-attr,.hljs-selector-pseudo {
-    color: var(--code-tag) !important;
+.hljs-built_in {
+    color: var(--code-builtin) !important;
 }
 .hljs-doctag,.hljs-attr,.hljs-bullet,.hljs-link,.hljs-symbol {
-    color: var(--text-gray) !important;
+    color: var(--soft-sea-green) !important;
 }
 .hljs-emphasis {
     font-style:italic;
