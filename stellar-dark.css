@@ -26,6 +26,9 @@ Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
     --code-select-gray: #333;
     --table-header-gray: #222;
     --soft-red: #ed363c;
+    --code-comment: #a57489;
+    --code-tag: #06dd87;
+    --code-string: #f7b2b2;
 }
 
 
@@ -682,9 +685,9 @@ NOTE: comments for this section are for how they appear in CSS code notes unless
 .cm-s-default .cm-def {color: #5df7e8;} /*@*/
 .cm-s-default .cm-qualifier {color:  #269b4d;} /*class*/
 .cm-s-default .cm-builtin {color: #9368f7;} /*id-selectors*/
-.cm-s-default .cm-tag {color: #06dd87;} /*html tags*/
+.cm-s-default .cm-tag {color: var(--code-tag);} /*html tags*/
 .cm-s-default .cm-meta {color: #777;}  /*meta (browser compatability) tags*/
-.cm-s-default .cm-comment {color: #a57489;} /*comments*/
+.cm-s-default .cm-comment {color: var(--code-comment);} /*comments*/
 .cm-s-default .cm-number {color: #ea5474;} /*numbers including units, not including color codes*/
 .cm-s-default .cm-keyword {color: var(--soft-red);} /*color names and keywords*/
 .cm-s-default .cm-attribute {color: #CBEAD9;} /*print keyword*/
@@ -699,8 +702,8 @@ NOTE: comments for this section are for how they appear in CSS code notes unless
 .cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #01ad6e;} /*pseudo elements and classes*/
 
 /***strings***/
-.cm-s-default .cm-string {color: #f7b2b2;}
-.cm-s-default .cm-string-2 {color: #fc7462;} /*applies to some CSS properties*/
+.cm-s-default .cm-string {color: var(--code-string);}
+.cm-s-default .cm-string-2 {color: var(--code-string);} /*applies to some CSS properties*/
 
 /***brackets and parentheses***/
 div.CodeMirror span.CodeMirror-matchingbracket {color: #01ba3f;}
@@ -709,3 +712,39 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #c60101;}
 /***code errors***/
 .cm-s-default .cm-error {color: #f00;}
 .cm-invalidchar {color: #f00;}
+
+
+/*****HIGHLIGHT.JS****/
+pre code.hljs {
+    display:block;
+    overflow-x:auto;
+    padding:1em
+}
+code.hljs {
+    padding:3px 5px
+}
+.hljs{
+    background:#fff;
+    color:turquoise !important;
+}
+.hljs-comment,.hljs-quote,.hljs-variable {
+    color: var(--code-comment) !important;
+}
+.hljs-built_in,.hljs-keyword,.hljs-name,.hljs-selector-tag,.hljs-tag {
+    color: var(--code-tag) !important;
+}
+.hljs-addition,.hljs-attribute,.hljs-literal,.hljs-section,.hljs-string,.hljs-template-tag,.hljs-template-variable,.hljs-title,.hljs-type {
+    color: var(--code-string) !important;
+}
+.hljs-deletion,.hljs-meta,.hljs-selector-attr,.hljs-selector-pseudo {
+    color: var(--code-tag) !important;
+}
+.hljs-doctag,.hljs-attr,.hljs-bullet,.hljs-link,.hljs-symbol {
+    color: var(--text-gray) !important;
+}
+.hljs-emphasis {
+    font-style:italic;
+}
+.hljs-strong {
+    font-weight:700;
+}
