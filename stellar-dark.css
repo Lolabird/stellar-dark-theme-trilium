@@ -326,6 +326,10 @@ body blockquote{
     margin-bottom: 0;
     padding-bottom: .3em;
 }
+.ck-content blockquote i{
+    font-style: normal;
+    color: var(--bold-sun);
+}
 
 
 /*****ICONS*****/
