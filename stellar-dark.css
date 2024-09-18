@@ -18,8 +18,8 @@ Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
     --earth-sun: #333225;
     --light-turquoise: #6df9f7;
     --sea-foam: #6df9b1;
-    --italic-orange: #f4ba92;
-    --border-orange: #cc6c2c;
+    --italic-orange: #f4db92 /*#f4ba92*/;
+    --border-orange: #cc862c /*#cc6c2c*/;
     --sea-green: #04c963;
     --shallow-sea-blue: #54bcba;
     --header-font-family: Lucida Console, Monaco, sans-serif;
@@ -308,10 +308,10 @@ li label {
 
 /***italics and quotes***/
 body i {
-    color: var(--bright-sun);
+    color:  var(--italic-orange);
 }
 body blockquote{
-    color: var(--bright-sun);
+    color: var(--italic-orange);
 }
 .ck-content blockquote {
     overflow: hidden;
@@ -320,7 +320,7 @@ body blockquote{
     margin-left: 0;
     margin-right: 0;
     font-style: italic;
-    border-left: 5px solid var(--darkened-sun);
+    border-left: 5px solid var(--border-orange);
 }
 .ck-content blockquote p{
     margin-bottom: 0;
@@ -328,7 +328,7 @@ body blockquote{
 }
 .ck-content blockquote i{
     font-style: normal;
-    color: var(--bright-sun);
+    color: var(--bold-sun);
 }
 
 
