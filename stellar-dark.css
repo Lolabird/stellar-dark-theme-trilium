@@ -484,6 +484,10 @@ button:hover :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-butt
     box-shadow: var(--ck-inner-shadow),0 0;
     outline: none;
 }
+/*backend logs*/
+textarea.backend-log-textarea {
+    background: var(--shallow-sea-blue);
+}
 
 
 /*****NOTE MAP*****/
