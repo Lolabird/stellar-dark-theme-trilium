@@ -439,6 +439,7 @@ body .global-menu-button {
     background: #fcfbb3 !important /*var(--bold-sun)*/;
 }
 span.ck-find-result {
+    color: var(text-gray) !important;
     background: var(--code-select-gray);
 }
 span.ck-find-result_selected {
@@ -731,7 +732,8 @@ NOTE: comments for this section are for how they appear in CSS code notes unless
     background-color: var(--code-select-gray);
 }
 .cm-s-default .cm-matchhighlight{
-    background-color: #030016;
+    color: var(--text-gray) !important;
+    background-color: var(--earth-sun);
 }
 
 /***general elements***/
