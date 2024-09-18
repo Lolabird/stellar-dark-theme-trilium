@@ -207,7 +207,7 @@ body h2 {
     font-family: var(--header-font-family);
     font-size: 2rem !important;
 }
-body h2 code {
+body h2 code, body h2 code b, body h2 code strong, body h2 code i, body h2 code em {
     font-size: 1.9rem !important;
     background: transparent !important;
 }
@@ -217,7 +217,7 @@ body h3 {
     font-family: var(--header-font-family);
     font-size: 1.9rem !important;
 }
-body h3 code {
+body h3 code, body h3 code b, body h3 code strong, body h3 code i, body h3 code em {
     font-size: 1.78rem !important;
     background: transparent !important;
 }
@@ -227,7 +227,7 @@ body h4 {
     font-family: var(--header-font-family);
     font-size: 1.78rem !important;
 }
-body h4 code {
+body h4 code, body h4 code b, body h4 code strong, body h4 code i, body h4 code em {
     font-size: 1.65rem !important;
     background: transparent !important;
 }
@@ -237,7 +237,7 @@ body h5 {
     font-family: var(--header-font-family);
     font-size: 1.65rem !important;
 }
-body h5 code {
+body h5 code, body h5 code b, body h5 code strong, body h5 code i, body h5 code em {
     font-size: 1.53rem !important;
     background: transparent !important;
 }
@@ -247,7 +247,7 @@ body h6 {
     font-family: var(--header-font-family);
     font-size: 1.53rem !important;
 }
-body h6 code {
+body h6 code, body h6 code b, body h6 code strong, body h6 code i, body h6 code em {
     font-size: 1.4rem !important;
     background: transparent !important;
 }
