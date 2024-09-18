@@ -365,6 +365,18 @@ div.title-bar-buttons.component button, button.icon-action {
     border: none !important;
 }
 
+/***Calendar***/
+div.dropdown-menu.dropdown-menu-right > div.calendar-dropdown-widget > div.calendar-body > a.calendar-date:hover, .calendar-dropdown-widget .calendar-btn:hover {
+    color: var(--bold-sun) !important;
+    background: var(--earth-sun) !important;
+}
+a.calendar-date.calendar-date-exists {
+    color: var(--dim-sun);
+}
+a.calendar-date.calendar-date-today {
+    background: var(--midish-gray);
+}
+
 /***tree***/
 /*note icon*/
 .fancytree-custom-icon {
