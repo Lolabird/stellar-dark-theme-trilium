@@ -490,6 +490,24 @@ svg.jtk-connector path {
     stroke: var(--shallow-sea-blue);
     fill: none !important;
 }
+.note-detail-relation-map .note-box {
+    padding: 12px 30px 12px 12px;
+    position: absolute !important;
+    background-color: var(--accented-background-color);
+    color: var(--main-text-color);
+    z-index: 4;
+    border: 1px solid #666;
+    box-shadow: 2px 2px 19px #999;
+    border-radius: 8px;
+    opacity: 0.8;
+    font-size: 1rem;
+    width: auto;
+    height: auto;
+    max-width: 240px;
+    min-width: 150px;
+    max-height: 200px;
+    overflow: hidden;
+}
 
 
 /*****BACKLINKS POPUP*****/
