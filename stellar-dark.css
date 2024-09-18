@@ -486,7 +486,7 @@ button:hover :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-butt
 }
 /*backend logs*/
 textarea.backend-log-textarea {
-    background: var(--shallow-sea-blue);
+    color: var(--shallow-sea-blue) !important;
 }
 
 
