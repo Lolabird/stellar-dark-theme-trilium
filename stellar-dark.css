@@ -531,6 +531,13 @@ svg.jtk-connector path {
 
 
 /*****BACKLINKS POPUP*****/
+.floating-buttons-children {
+    flex-direction: column-reverse !important;
+}
+.backlinks-ticker {
+    padding: 6px 0 !important;
+    writing-mode: vertical-lr;
+}
 div.backlinks-items {
     z-index: 10;
     position: absolute;
