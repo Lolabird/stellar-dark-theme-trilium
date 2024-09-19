@@ -456,6 +456,11 @@ span.ck-find-result_selected {
     color: var(--dim-sun);
 }
 
+/*edit button*/
+.bx-edit-alt {
+    height: 40px;
+}
+
 /***primary and secondary buttons***/
 button:focus :not(.close) :not(.help-button) :not(.ck-button-save) :not(.ck-button-cancel), .btn:focus {
     color: var(--text-gray) !important;
