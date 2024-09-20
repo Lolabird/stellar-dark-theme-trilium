@@ -331,6 +331,11 @@ body blockquote{
     color: var(--bold-sun);
 }
 
+/***decorated links***/
+a > i, a > em, a > b, a > strong {
+    color: var(--link-color);
+}
+
 
 /*****ICONS*****/
 /*main note icon*/
