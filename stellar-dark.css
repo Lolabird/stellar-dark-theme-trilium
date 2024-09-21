@@ -131,7 +131,7 @@ html {
     --tooltip-background-color: var(--background-gray);
     --link-color: var(--light-turquoise);
 
-    --mermaid-theme: default;
+    --mermaid-theme: dark;
 }
 
 
