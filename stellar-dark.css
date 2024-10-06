@@ -315,9 +315,6 @@ body strong {
 }
 
 /***lists***/
-body ul.todo-list li {
-    color: var(--sea-foam);
-}
 li label {
     display: inline;
     line-height: 2rem;
