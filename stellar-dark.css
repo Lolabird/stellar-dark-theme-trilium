@@ -319,7 +319,7 @@ li label {
     display: inline;
     line-height: 2rem;
 }
-.ck-content .todo-list .todo-list__label>input[checked]:before, .ck-editor__editable.ck-content .todo-list .todo-list__label>span[contenteditable=false]>input[checked]:before{
+.ck-content .todo-list .todo-list__label>input[checked]:before, .ck-editor__editable.ck-content .todo-list .todo-list__label>span[contenteditable=false]>input[checked]:before {
     background: var(--sea-green);
     border-color: var(--sea-foam) !important;
 }
@@ -565,12 +565,13 @@ svg.jtk-connector path {
 }
 
 
-/*****BACKLINKS POPUP*****/
+/*****FLOATING BUTTONS*****/
+/***Backlinks Popup***/
 .floating-buttons-children {
     flex-direction: column-reverse !important;
 }
 .backlinks-ticker {
-    padding: 6px 0 !important;
+    padding: 6px 3px !important;
     writing-mode: vertical-lr;
 }
 div.backlinks-items {
@@ -594,6 +595,31 @@ div.backlinks-items div:hover {
 }
 .backlinks-ticker:hover {
     background-color: var(--earth-sun);
+}
+
+/***Relation Map Buttons***/
+.relation-map-buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.relation-map-buttons > .btn-group {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+.relation-map-buttons > button, .relation-map-buttons > .btn-group button {
+    border: none !important;
+}
+.relation-map-buttons > .btn-group > .btn-group:not(:first-child), .btn-group>.btn:not(:first-child) {
+    margin-left: 0;
+}
+.relation-map-buttons > button:hover, .relation-map-buttons > .btn-group button:hover {
+    border: none;
+    background: transparent !important;
+    color: var(--bold-sun);
 }
 
 
@@ -809,7 +835,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #c60101;}
 .cm-invalidchar {color: #f00;}
 
 
-/*****HIGHLIGHT.JS*****/
+/*****ADDONS*****/
+/***Highlight.js***/
 pre code.hljs {
     display:block;
     overflow-x:auto;
@@ -868,8 +895,7 @@ code.hljs {
     font-weight:700;
 }
 
-
-/*****ZEN MODE*****/
+/***Zen Mode***/
 /*Use the button or alt+z to toggle it on and off*/
 /* hide launcher buttons*/
 .zen-mode button.bx-chevrons-left, .zen-mode button.bx-chevrons-right, .zen-mode #launcher-pane > .component > :not(button.component.button-widget.bx-spa) {
@@ -902,4 +928,9 @@ code.hljs {
 /* hide backlink, code buttons, etc. */
 .zen-mode .floating-buttons-children{
     display: none !important;
+}
+
+/***Theme Switcher***/
+.theme-selection.component .switch {
+    top: 5.75px !important;
 }
