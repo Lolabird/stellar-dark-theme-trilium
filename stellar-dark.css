@@ -201,55 +201,55 @@ html {
 
 /*****HEADERS*****/
 /*h1 is not defined, because it's not currently an option for headers in the main body*/
-body h2 {
+.ck-content h2 {
     color: var(--darkened-sun);
     font-weight: 850;
     font-family: var(--header-font-family);
-    font-size: 2rem !important;
+    font-size: 2rem;
 }
-body h2 code, body h2 code b, body h2 code strong, body h2 code i, body h2 code em {
-    font-size: 1.9rem !important;
-    background: transparent !important;
+.ck-content h2 code, .ck-content h2 code b, .ck-content h2 code strong, .ck-content h2 code i, .ck-content h2 code em {
+    font-size: 1.9rem;
+    background: transparent;
 }
-body h3 {
+.ck-content h3 {
     color: var(--bright-sun);
     font-weight: 700;
     font-family: var(--header-font-family);
-    font-size: 1.9rem !important;
+    font-size: 1.9rem;
 }
-body h3 code, body h3 code b, body h3 code strong, body h3 code i, body h3 code em {
-    font-size: 1.78rem !important;
-    background: transparent !important;
+.ck-content h3 code, .ck-content h3 code b, .ck-content h3 code strong, .ck-content h3 code i, .ck-content h3 code em {
+    font-size: 1.78rem;
+    background: transparent;
 }
-body h4 {
+.ck-content h4 {
     color: #6cccca;
     font-weight: 600;
     font-family: var(--header-font-family);
-    font-size: 1.78rem !important;
+    font-size: 1.78rem;
 }
-body h4 code, body h4 code b, body h4 code strong, body h4 code i, body h4 code em {
-    font-size: 1.65rem !important;
-    background: transparent !important;
+.ck-content h4 code, .ck-content h4 code b, .ck-content h4 code strong, .ck-content h4 code i, .ck-content h4 code em {
+    font-size: 1.65rem;
+    background: transparent;
 }
-body h5 {
+.ck-content h5 {
     color: #99cccb;
     font-weight: 600;
     font-family: var(--header-font-family);
-    font-size: 1.65rem !important;
+    font-size: 1.65rem;
 }
-body h5 code, body h5 code b, body h5 code strong, body h5 code i, body h5 code em {
-    font-size: 1.53rem !important;
-    background: transparent !important;
+.ck-content h5 code, .ck-content h5 code b, .ck-content h5 code strong, .ck-content h5 code i, .ck-content h5 code em {
+    font-size: 1.53rem;
+    background: transparent;
 }
-body h6 {
+.ck-content h6 {
     color: #99ccb1;
     font-weight: 600;
     font-family: var(--header-font-family);
-    font-size: 1.53rem !important;
+    font-size: 1.53rem;
 }
-body h6 code, body h6 code b, body h6 code strong, body h6 code i, body h6 code em {
-    font-size: 1.4rem !important;
-    background: transparent !important;
+.ck-content h6 code, .ck-content h6 code b, .ck-content h6 code strong, .ck-content h6 code i, .ck-content h6 code em {
+    font-size: 1.4rem;
+    background: transparent;
 }
 
 
@@ -873,7 +873,7 @@ code.hljs {
 /*****ZEN MODE*****/
 /*Use the button or alt+z to toggle it on and off*/
 /* hide launcher buttons*/
-.zen-mode button.bx-chevrons-left,.zen-mode #launcher-pane > .component > :not(button.component.button-widget.bx-spa) {
+.zen-mode button.bx-chevrons-left, .zen-mode button.bx-chevrons-right, .zen-mode #launcher-pane > .component > :not(button.component.button-widget.bx-spa) {
     display: none !important;
 }
 /* hide note tree */
