@@ -575,6 +575,11 @@ span.ck-find-result_selected {
     background: var(--bright-sun);
 }
 
+/***Empty note field***/
+input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
+    height: auto;
+}
+
 
 /*****BUTTONS*****/
 .help-button {
