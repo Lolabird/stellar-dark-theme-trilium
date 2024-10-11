@@ -386,11 +386,11 @@ a > i, a > em, a > b, a > strong {
 }
 
 /***launcher, floating tree, icon action and title bar buttons***/
-div.title-bar-buttons.component button, button.icon-action {
-    color: var(--dim-sun);
+div.title-bar-buttons.component button, button.icon-action, .icon-action {
+    color: var(--dim-sun) !important;
 }
-#launcher-pane .launcher-button:hover, button.tree-floating-button:hover, .title-bar-buttons div:hover button, button.icon-action:hover {
-    color: var(--bold-sun);
+#launcher-pane .launcher-button:hover, button.tree-floating-button:hover, .title-bar-buttons div:hover button, button.icon-action:hover, .icon-action:hover {
+    color: var(--bold-sun) !important;
     border: none !important;
 }
 
