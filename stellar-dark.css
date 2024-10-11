@@ -712,11 +712,11 @@ div.backlinks-items div:hover {
 .relation-map-buttons > button, .relation-map-buttons > .btn-group button {
     border: none !important;
 }
-.relation-map-buttons > .btn-group > .btn-group:not(:first-child), .relation-map-buttons > .btn-group > .btn:not(:first-child), .relation-map-buttons > .btn-group > .btn-group:not(:last-child) >.btn, .relation-map-buttons > .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
-    margin: 5px 0 5px 1px;
+.relation-map-buttons > .btn-group > .btn-group:not(:first-child), .relation-map-buttons > .btn-group > .btn:not(:first-child), .relation-map-buttons > .btn-group > .btn-group:not(:last-child) >.btn, .relation-map-buttons > .btn-group > .btn:not(:last-child):not(.dropdown-toggle), button.copy-image-reference-button, button.export-mermaid-button {
+    margin: 5px 0 5px 1px !important;
     border-radius: var(--button-border-radius);
 }
-.relation-map-buttons > button:hover, .relation-map-buttons > .btn-group button:hover {
+.relation-map-buttons > button:hover, .relation-map-buttons > .btn-group button:hover, button.copy-image-reference-button:hover, button.export-mermaid-button:hover {
     border: none;
     background: transparent !important;
     color: var(--bold-sun);
