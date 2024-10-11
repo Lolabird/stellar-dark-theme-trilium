@@ -721,6 +721,17 @@ div.backlinks-items div:hover {
     background: transparent !important;
     color: var(--bold-sun);
 }
+.close-floating-buttons-button {
+    border: none !important;
+    color: var(--button-text-color);
+    padding: 6px;
+    border-radius: 100px;
+    margin: 5px;
+}
+.close-floating-buttons-button:hover {
+    border: none !important;
+    color: var(--soft-red) !important;
+}
 
 
 /*****Attributes Popup*****/
