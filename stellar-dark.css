@@ -3,6 +3,93 @@ Stellar Dark by Octavia N. (https://github.com/Lolabird/stellar-dark-theme-trili
 
 Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
 ******************************************************************/
+/*****FONT IMPORTS*****/
+@font-face{
+    font-family: 'Fira Mono';
+    src:url('/custom/themes/StellarDark/FiraMono-Regular.woff2') format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Mono';
+    src:url('/custom/themes/StellarDark/FiraMono-Bold.woff2') format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-Light.woff2') format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-LightItalic.woff2') format("woff2");
+    font-weight: 300;
+    font-style: oblique;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-Regular.woff2') format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-Italic.woff2') format("woff2");
+    font-weight: 400;
+    font-style: oblique;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-Medium.woff2') format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-MediumItalic.woff2') format("woff2");
+    font-weight: 500;
+    font-style: oblique;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-SemiBold.woff2') format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-SemiBoldItalic.woff2') format("woff2");
+    font-weight: 600;
+    font-style: oblique;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-Bold.woff2') format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-BoldItalic.woff2') format("woff2");
+    font-weight: 700;
+    font-style: oblique;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-ExtraBold.woff2') format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src:url('/custom/themes/StellarDark/FiraSans-ExtraBoldItalic.woff2') format("woff2");
+    font-weight: 800;
+    font-style: oblique;
+}
+
+
 /*****ROOT (COLOR AND FONT KEY)*****/
 :root{
     /***main body (including CKEditor), modal(options menu), and some code colors (see last section for more code colors)***/
@@ -22,7 +109,7 @@ Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
     --border-orange: #cc862c /*#cc6c2c*/;
     --sea-green: #04c963;
     --shallow-sea-blue: #54bcba;
-    --header-font-family: Lucida Console, Monaco, sans-serif;
+    --header-font-family: 'Fira Sans', sans-serif;
     --code-select-gray: #333;
     --table-header-gray: #222;
     --soft-red: #ed363c;
@@ -50,17 +137,17 @@ html {
 
     /***fonts***/
     /*general fonts*/
-    --main-font-family: sans-serif;
+    --main-font-family: 'Fira Sans', sans-serif;
     --main-font-size: 1.2rem;
 
-    --tree-font-family: serif;
+    --tree-font-family: 'Fira Sans', sans-serif;
     --tree-font-size: 1.3rem;
 
-    --detail-font-family: sans-serif;
+    --detail-font-family: 'Fira Sans', sans-serif;
     --detail-font-size: 1.3rem;
 
     /*code fonts*/
-    --monospace-font-family: monospace;
+    --monospace-font-family: 'Fira Mono', monospace;
     --monospace-font-size: 1.2rem;
 
     /***colors***/
@@ -139,6 +226,9 @@ html {
 .ck-content .image>figcaption {
     font-size: 1rem;
 }
+.ck-content figure.image>figcaption code {
+    font-size: .95rem;
+}
 
 
 /*****Scrollbar*****/
@@ -203,7 +293,7 @@ html {
 /*h1 is not defined, because it's not currently an option for headers in the main body*/
 .ck-content h2 {
     color: var(--darkened-sun);
-    font-weight: 850;
+    font-weight: 800;
     font-family: var(--header-font-family);
     font-size: 2rem;
 }
@@ -311,7 +401,7 @@ tr:nth-child(odd) {
 /*bold*/
 body strong {
   color:var(--bold-sun);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /***lists***/
@@ -344,16 +434,25 @@ body blockquote{
     margin-left: 0;
     margin-right: 0;
     font-style: italic;
+    font-weight: 300;
+    font-size: 1.35rem;
     border-left: 5px solid var(--border-orange);
 }
-.ck-content blockquote p{
+.ck-content blockquote p {
     margin-bottom: 0;
     padding-bottom: .3em;
 }
-.ck-content blockquote i{
+.ck-content blockquote i {
     font-style: normal;
     color: var(--bold-sun);
 }
+.ck-content blockquote b {
+    font-weight: 500;
+}
+.ck-content blockquote code strong {
+    font-weight: 700;
+}
+
 
 /***decorated links***/
 a > i, a > em, a > b, a > strong {
@@ -659,7 +758,7 @@ pre::after{
 
 /***inline code***/
 .ck-content code, .ck-content code i, .ck-content code strong  {
-    font-size: .95rem;
+    font-size: 1.1rem;
     background: var(--supa-dark);
     color: var(--shallow-sea-blue) !important;
     letter-spacing: 1px;
@@ -951,7 +1050,7 @@ code.hljs {
 
 /***Trilium Chat***/
 .chat-wrapper {
-    --trilium-green: var(--soft-foam);
+    --trilium-green: var(--sea-foam);
 }
 .chat-wrapper .header_face:hover {
     color: var(--bright-sun) !important;
