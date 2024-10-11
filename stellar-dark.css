@@ -942,3 +942,9 @@ code.hljs {
 .theme-selection.component .switch {
     top: 5.75px !important;
 }
+.theme-selection.component {
+    --icon-dark: var(--bright-sun) !important;
+}
+.theme-selection.component:hover {
+    --icon-dark: var(--supa-dark) !important;
+}
