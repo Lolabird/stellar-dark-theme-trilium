@@ -953,3 +953,6 @@ code.hljs {
 .chat-wrapper {
     --trilium-green: var(--soft-foam);
 }
+.chat-wrapper .header_face:hover {
+    color: var(--bright-sun) !important;
+}
