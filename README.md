@@ -1,11 +1,15 @@
 # Stellar Dark Theme 
 Dark theme for [Trilium Notes](https://github.com/zadam/trilium)
 
+![Text Showcase](/screenshots/SD_Main.png)
+
 ## Features
 ### Native Styles
+* Dark theme
 * High contrast
 * Scrolling tables with sticky headers on both axes
 * Vertical floating buttons that have much less overlap with content of notes
+* Custom fonts
 * Bright colors
 
 ### Enhanced Addon Styles
@@ -30,7 +34,7 @@ Dark theme for [Trilium Notes](https://github.com/zadam/trilium)
 #### Zen Mode
 * Create a 'JS frontend' code note
 * Add the `#widget` attribute to 'Owned Attributes' (the button with three lines and a checkmark)
-* Add the following code (created by [Nriver]) to the note
+* Add the following code (created by [Nriver](https://github.com/Nriver/awesome-trilium/issues/44))) to the note
     ```js
     api.addButtonToToolbar({
         title: 'Zen mode',
@@ -44,20 +48,39 @@ Dark theme for [Trilium Notes](https://github.com/zadam/trilium)
 * Reload (`ctrl+r` or `F5`) Trilium to enable the script
 
 ##### Usage
-Press `alt+z` or the spa button in the launcher (left most panel) to enable/disable zen mode.
+Press `alt+z` or the zen (spa) button in the launcher (left most panel) to enable/disable zen mode.
 
 There are two types of zen mode available:
 1. Right panel enabled
 2. Right panel disabled
 
 Right panel is enabled by default. If you would like to disable it, you can either add the following code in a new CSS note or uncomment it in the Stellar Dark theme as seen in the video below.
+
 ![Zen Mode](/screenshots/SD_Zen.mp4)
 
+##### Added Features
+* Window control buttons are still accessible in zen mode
+* Zen button is still accessible in zen mode for easy disabling in case you don't remember the shortcut
+* Bottom panel widgets are not visible in zen mode
+* Optional disabling of right panel in zen mode
+
+#### Show Position in TOC and Syntax Highlight
+Please go to each addon's respective page for instructions on how to enable these addons.
+* [Show Position in TOC](https://github.com/SiriusXT/trilium-show-position-in-toc)
+* [Syntax Highlight](https://github.com/antoniotejada/Trilium-SyntaxHighlightWidget)
 
 ## Screenshots and Videos
-![Text Showcase](/screenshots/SD_Main.png)
+![Selection Showcase](/screenshots/SD_Hover.png)
+
+![Tables Showcase](/screenshots/SD_Tables.mp4)
+
 ![Map Showcase](/screenshots/SD_Map.png)
+
 ![Code Showcase](/screenshots/SD_Code.png)
+
+![Code Selection Showcase](/screenshots/SD_Code_Hover.mp4)
+
+![Text Note Syntax Highlight Showcase](/screenshots/SD_Highlight.png)
 
 ## Credits and Resources
 ### Fonts
