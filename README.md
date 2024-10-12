@@ -103,4 +103,4 @@ https://github.com/user-attachments/assets/ffb95d3e-572b-48d4-a47a-123ae6fb0e6d
 * WordCount (Featured in the [Demo Document](https://github.com/zadam/trilium/wiki/Document#demo-document))
 * [Zen Mode](https://github.com/Nriver/awesome-trilium/issues/44)
 
-Find more addons made by the Trilium community at [Nriver's "Awesome Trilium" page](https://github.com/Nriver/awesome-trilium?tab=readme-ov-file#%EF%B8%8F-widgets)!
+Find more addons made by the Trilium community at [Nriver's "Awesome Trilium" page](https://github.com/Nriver/awesome-trilium?tab=readme-ov-file#%EF%B8%8F-widgets), and check out my other theme [EverForest Ant Dark](https://github.com/Lolabird/everforest-ant-dark-trilium-theme) while you're at it!!
