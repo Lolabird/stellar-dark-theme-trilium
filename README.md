@@ -34,7 +34,7 @@ Dark theme for [Trilium Notes](https://github.com/zadam/trilium)
 #### Zen Mode
 * Create a 'JS frontend' code note
 * Add the `#widget` attribute to 'Owned Attributes' (the button with three lines and a checkmark)
-* Add the following code (created by [Nriver](https://github.com/Nriver/awesome-trilium/issues/44))) to the note
+* Add the following code (created by [Nriver](https://github.com/Nriver/awesome-trilium/issues/44)) to the note
     ```js
     api.addButtonToToolbar({
         title: 'Zen mode',
@@ -56,7 +56,7 @@ There are two types of zen mode available:
 
 Right panel is enabled by default. If you would like to disable it, you can either add the following code in a new CSS note or uncomment it in the Stellar Dark theme as seen in the video below.
 
-![Zen Mode](/screenshots/SD_Zen.mp4)
+https://github.com/user-attachments/assets/e6019857-4e0f-46fb-a7e6-c83c4c6e30bb
 
 ##### Added Features
 * Window control buttons are still accessible in zen mode
@@ -72,13 +72,13 @@ Please go to each addon's respective page for instructions on how to enable thes
 ## Screenshots and Videos
 ![Selection Showcase](/screenshots/SD_Hover.png)
 
-![Tables Showcase](/screenshots/SD_Tables.mp4)
+https://github.com/user-attachments/assets/131e4f64-f1b5-411b-b849-182d1de66b17
 
 ![Map Showcase](/screenshots/SD_Map.png)
 
 ![Code Showcase](/screenshots/SD_Code.png)
 
-![Code Selection Showcase](/screenshots/SD_Code_Hover.mp4)
+https://github.com/user-attachments/assets/ffb95d3e-572b-48d4-a47a-123ae6fb0e6d
 
 ![Text Note Syntax Highlight Showcase](/screenshots/SD_Highlight.png)
 
