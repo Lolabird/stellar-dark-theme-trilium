@@ -56,6 +56,13 @@ There are two types of zen mode available:
 
 Right panel is enabled by default. If you would like to disable it, you can either add the following code in a new CSS note or uncomment it in the Stellar Dark theme as seen in the video below.
 
+```css
+/*hide right pane*/
+.zen-mode #right-pane {
+    display: none !important;
+}
+```
+
 https://github.com/user-attachments/assets/e6019857-4e0f-46fb-a7e6-c83c4c6e30bb
 
 ##### Added Features
