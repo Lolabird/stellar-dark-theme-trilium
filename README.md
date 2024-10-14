@@ -63,7 +63,7 @@ Right panel is enabled by default. If you would like to disable it, you can eith
 }
 ```
 
-https://github.com/user-attachments/assets/e6019857-4e0f-46fb-a7e6-c83c4c6e30bb
+https://github.com/user-attachments/assets/189e35e4-2ba0-4e93-b6cb-1dd25e0cd523
 
 ##### Added Features
 * Window control buttons are still accessible in zen mode
@@ -79,13 +79,13 @@ Please go to each addon's respective page for instructions on how to enable thes
 ## Screenshots and Videos
 ![Selection Showcase](/screenshots/SD_Hover.png)
 
-https://github.com/user-attachments/assets/131e4f64-f1b5-411b-b849-182d1de66b17
+https://github.com/user-attachments/assets/60c5d157-fe57-48de-93a4-9f63479756f1
 
 ![Map Showcase](/screenshots/SD_Map.png)
 
 ![Code Showcase](/screenshots/SD_Code.png)
 
-https://github.com/user-attachments/assets/ffb95d3e-572b-48d4-a47a-123ae6fb0e6d
+https://github.com/user-attachments/assets/8b83cbf3-9170-46de-a59a-e13f0785d533
 
 ![Text Note Syntax Highlight Showcase](/screenshots/SD_Highlight.png)
 
