@@ -343,12 +343,6 @@ html {
 }
 
 
-/*****TEXT*****/
-*{
-    letter-spacing: 1.2px;
-}
-
-
 /*****TABLE*****/
 .ck-content .table>figcaption {
     background-color: var(--table-header-gray);
