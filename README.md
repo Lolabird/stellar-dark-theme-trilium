@@ -85,7 +85,7 @@ https://github.com/user-attachments/assets/60c5d157-fe57-48de-93a4-9f63479756f1
 
 ![Code Showcase](/screenshots/SD_Code.png)
 
-https://github.com/user-attachments/assets/8b83cbf3-9170-46de-a59a-e13f0785d533
+https://github.com/user-attachments/assets/a087b308-f532-4ff9-a620-444252ee71ce
 
 ![Text Note Syntax Highlight Showcase](/screenshots/SD_Highlight.png)
 
