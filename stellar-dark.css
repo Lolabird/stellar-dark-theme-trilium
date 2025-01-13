@@ -208,9 +208,9 @@ html {
     /*tabs*/
     --active-tab-background-color: var(--bold-sun);
     --active-tab-text-color: var(--background-gray);
+    --active-tab-hover-background-color: var(--text-gray);
     --inactive-tab-background-color: var(--midish-gray);
     --inactive-tab-text-color: var(--text-gray);
-    --active-tab-hover-background-color: var(--text-gray);
     --inactive-tab-hover-background-color: var(--earth-sun);
 
     /*general*/
