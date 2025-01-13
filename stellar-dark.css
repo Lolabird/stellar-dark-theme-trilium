@@ -1063,3 +1063,29 @@ code.hljs {
 .chat-wrapper .header_face:hover {
     color: var(--bright-sun) !important;
 }
+
+/***Breadcrumbs***/
+#breadcrumbs-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid var(--main-border-color);
+    border-bottom: 1px solid var(--main-border-color);
+    contain: none;
+    overflow: auto;
+}
+#breadcrumbs span a {
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inherit;
+}
+#breadcrumbs a {
+    display: inline-flex;
+    line-height: 1;
+    padding: 5px 10px;
+    background-color: rgba(252, 251, 179, 0.05) !important;
+    border-radius: 12px;
+    transition: transform 200ms ease, background-color 200ms ease, filter 200ms ease;
+}
