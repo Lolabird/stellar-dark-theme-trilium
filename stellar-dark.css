@@ -986,7 +986,7 @@ code.hljs {
 .hljs-attribute {
     color: var(--code-attribute) !important;
 }
-.hljs-addition,.hljs-literal,.hljs-section,.hljs-string,.hljs-template-tag,.hljs-template-variable,.hljs-type {
+.hljs-addition,.hljs-literal,.hljs-section,.hljs-string,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-regexp {
     color: var(--code-string) !important;
 }
 .hljs-built_in {
