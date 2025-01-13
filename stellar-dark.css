@@ -20,6 +20,7 @@ Inspired by https://github.com/Engr-AllanG/trilium-theme-Neon_Dark
     font-family: 'Fira Sans';
     src:url('/custom/themes/StellarDark/FiraSans-Light.woff2') format("woff2");
     font-weight: 300;
+    font-style: normal;    
     font-style: normal;
 }
 @font-face{
@@ -576,13 +577,6 @@ input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
 
 
 /*****BUTTONS*****/
-.help-button {
-    color: hsl(15, 100%, 56%);
-}
-.help-button:hover {
-    color: var(--dim-sun);
-}
-
 /*edit button*/
 .bx-edit-alt {
     height: 40px;
@@ -1046,10 +1040,10 @@ code.hljs {
 .zen-mode #center-pane > :not(.split-note-container-widget) {
     display: none !important;
 }
-/*hide right pane*/
-/*.zen-mode #right-pane {
+/*hide right pane*
+.zen-mode #right-pane {
     display: none !important;
-}*/
+}
 
 /***Theme Switcher***/
 .theme-selection.component .switch {
