@@ -980,19 +980,19 @@ code.hljs {
 .hljs-comment,.hljs-quote {
     color: var(--code-comment) !important;
 }
-.hljs-name,.hljs-selector-tag,.hljs-tag,.hljs-deletion,.hljs-selector-attr {
+.hljs-name,.hljs-name>.hljs-tag,.hljs-selector-tag,.hljs-tag,.hljs-deletion,.hljs-selector-attr {
     color: var(--code-tag) !important;
 }
 .hljs-attribute {
     color: var(--code-attribute) !important;
 }
-.hljs-addition,.hljs-literal,.hljs-section,.hljs-string,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-regexp {
+.hljs-addition,.hljs-literal,.hljs-section,.hljs-string,.hljs-string>.hljs-tag,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-regexp {
     color: var(--code-string) !important;
 }
 .hljs-built_in {
     color: var(--code-builtin) !important;
 }
-.hljs-doctag,.hljs-attr,.hljs-bullet,.hljs-link,.hljs-symbol {
+.hljs-doctag,.hljs-attr,.hljs-attr>.hljs-tag,.hljs-bullet,.hljs-link,.hljs-symbol {
     color: var(--soft-sea-green) !important;
 }
 .hljs-emphasis {
