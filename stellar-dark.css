@@ -455,6 +455,31 @@ body blockquote{
     font-weight: 700;
 }
 
+/***notes***/
+.ck-content .admonition.note {
+    --accent-color: #69c7ff;
+}
+
+/***tips***/
+.ck-content .admonition.tip {
+    --accent-color: #40c025;
+}
+
+/***important***/
+.ck-content .admonition.important {
+    --accent-color: #9839f7;
+}
+
+/***caution***/
+.ck-content .admonition.caution {
+    --accent-color: #ff2e2e;
+}
+
+/***warning***/
+.ck-content .admonition.warning {
+    --accent-color: #e2aa03;
+}
+
 /***footnotes***/
 div.footnote-section.ck-widget {
     border: none;
