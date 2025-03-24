@@ -461,21 +461,27 @@ body blockquote{
 /***asides***/
 .ck-content .admonition.note {
     --accent-color: var(--code-attribute) !important;
+    --rgb: 203, 234, 217;
 }
 .ck-content .admonition.tip {
     --accent-color: var(--code-var) !important;
+    --rgb: 0, 136, 170;
 }
 .ck-content .admonition.important {
     --accent-color: var(--code-def) !important;
+    --rgb: 93, 247, 232;
 }
 .ck-content .admonition.caution {
     --accent-color: var(--soft-red) !important;
+    --rgb: 237, 54, 60;
 }
 .ck-content .admonition.warning {
     --accent-color: var(--code-string) !important;
+    --rgb: 247, 178, 178;
 }
 .ck-content aside.admonition {
     /*--accent-color: var(--card-border-color);*/
+    --card-background-color: rgba(var(--rgb), .15);
     border: none;
     border-left: 5px solid var(--accent-color);
     box-shadow: var(--card-box-shadow);
