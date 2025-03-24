@@ -454,6 +454,9 @@ body blockquote{
 .ck-content blockquote code strong {
     font-weight: 700;
 }
+.ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong, .ck-content blockquote em, .ck-content blockquote em > b, .ck-content blockquote em > strong {
+    font-style: normal;
+   }
 
 /***asides***/
 .ck-content .admonition.note {
