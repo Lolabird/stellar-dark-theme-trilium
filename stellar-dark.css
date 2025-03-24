@@ -415,6 +415,13 @@ li label {
     border: 1px solid var(--soft-red) !important;
 }
 
+/***decorated links***/
+a > i, a > em, a > b, a > strong {
+    color: var(--link-color);
+}
+
+
+/*****CONTENT BOXES*****/
 /***italics and quotes***/
 body i {
     color: var(--italic-orange);
@@ -448,10 +455,14 @@ body blockquote{
     font-weight: 700;
 }
 
-
-/***decorated links***/
-a > i, a > em, a > b, a > strong {
-    color: var(--link-color);
+/***footnotes***/
+div.footnote-section.ck-widget {
+    border: none;
+    border-top: 1px solid var(--devils-gray-lol);
+    border-radius: 2px;
+    counter-reset: footnote-counter;
+    margin: 2.5rem 0;
+    padding: 10px;
 }
 
 
