@@ -455,29 +455,21 @@ body blockquote{
     font-weight: 700;
 }
 
-/***notes***/
+/***asides***/
 .ck-content .admonition.note {
-    --accent-color: #69c7ff;
+    --accent-color: var(--code-attribute) !important;
 }
-
-/***tips***/
 .ck-content .admonition.tip {
-    --accent-color: #40c025;
+    --accent-color: var(--code-var) !important;
 }
-
-/***important***/
 .ck-content .admonition.important {
-    --accent-color: #9839f7;
+    --accent-color: var(--code-def) !important;
 }
-
-/***caution***/
 .ck-content .admonition.caution {
-    --accent-color: #ff2e2e;
+    --accent-color: var(--soft-red) !important;
 }
-
-/***warning***/
 .ck-content .admonition.warning {
-    --accent-color: #e2aa03;
+    --accent-color: var(--code-string) !important;
 }
 
 /***footnotes***/
