@@ -302,6 +302,10 @@ html {
     font-size: 1.9rem;
     background: transparent;
 }
+.ck-content h2 kbd, .ck-content h2 kbd i, .ck-content h2 kbd b, .ck-content h2 kbd strong {
+ font-size: 1.9rem;
+}
+
 .ck-content h3 {
     color: var(--bright-sun);
     font-weight: 700;
@@ -312,6 +316,10 @@ html {
     font-size: 1.78rem;
     background: transparent;
 }
+.ck-content h3 kbd, .ck-content h3 kbd i, .ck-content h3 kbd b, .ck-content h3 kbd strong {
+ font-size: 1.78rem;
+}
+
 .ck-content h4 {
     color: #6cccca;
     font-weight: 600;
@@ -322,6 +330,10 @@ html {
     font-size: 1.65rem;
     background: transparent;
 }
+.ck-content h4 kbd, .ck-content h4 kbd i, .ck-content h4 kbd b, .ck-content h4 kbd strong {
+ font-size: 1.65rem;
+}
+
 .ck-content h5 {
     color: #99cccb;
     font-weight: 600;
@@ -332,6 +344,10 @@ html {
     font-size: 1.53rem;
     background: transparent;
 }
+.ck-content h5 kbd, .ck-content h5 kbd i, .ck-content h5 kbd b, .ck-content h5 kbd strong {
+ font-size: 1.53rem;
+}
+
 .ck-content h6 {
     color: #99ccb1;
     font-weight: 600;
@@ -341,6 +357,9 @@ html {
 .ck-content h6 code, .ck-content h6 code b, .ck-content h6 code strong, .ck-content h6 code i, .ck-content h6 code em {
     font-size: 1.4rem;
     background: transparent;
+}
+.ck-content h6 kbd, .ck-content h6 kbd i, .ck-content h6 kbd b, .ck-content h6 kbd strong {
+ font-size: 1.4rem;
 }
 
 
@@ -393,13 +412,15 @@ tr:nth-child(odd) {
 
 
 /*****TEXT DECORATION*****/
-/*bold*/
-body strong {
+body strong, body b {
   color:var(--bold-sun);
   font-weight: 700;
 }
+body i, body em {
+    color: var(--italic-orange);
+}
 
-/***lists***/
+/*****LISTS*****/
 li label {
     display: inline;
     line-height: 2rem;
@@ -416,17 +437,9 @@ li label {
     background: var(--background-gray);
 }
 
-/***decorated links***/
-a > i, a > em, a > b, a > strong {
-    color: var(--link-color);
-}
 
-
-/*****CONTENT BOXES*****/
-/***italics and quotes***/
-body i {
-    color: var(--italic-orange);
-}
+/*****CARDS*****/
+/***blockquotes***/
 body blockquote{
     color: var(--italic-orange);
 }
@@ -445,10 +458,6 @@ body blockquote{
     margin-bottom: 0;
     padding-bottom: .3em;
 }
-.ck-content blockquote i {
-    font-style: normal;
-    color: var(--bold-sun);
-}
 .ck-content blockquote b {
     font-weight: 500;
 }
@@ -456,8 +465,8 @@ body blockquote{
     font-weight: 700;
 }
 .ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong, .ck-content blockquote em, .ck-content blockquote em > b, .ck-content blockquote em > strong {
-    font-style: normal;
-   }
+ font-style: normal;
+}
 
 /***asides***/
 .ck-content .admonition.note {
@@ -534,6 +543,12 @@ div.footnote-section.ck-widget {
     right: 0.2em;
     text-align: right;
     overflow: hidden;
+}
+
+
+/*****LINKS*****/
+body a * {
+ color: var(--link-color);
 }
 
 
@@ -817,8 +832,8 @@ div.backlinks-items div:hover {
     color: var(--text-gray) !important;
 }
 .tooltip {
-    z-index: 10 !important;
-   }
+ z-index: 10 !important;
+}
 
 
 /*****Deletion Alert*****/
