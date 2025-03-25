@@ -413,6 +413,7 @@ li label {
 }
 .ck-content .todo-list .todo-list__label > input:not([checked]):before, .ck-editor__editable.ck-content .todo-list .todo-list__label>span[contenteditable=false]>input:not([checked]):before {
     border: 1px solid var(--soft-red) !important;
+    background: var(--background-gray);
 }
 
 /***decorated links***/
