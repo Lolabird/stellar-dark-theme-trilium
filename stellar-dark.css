@@ -460,7 +460,10 @@ body blockquote{
 .ck-content blockquote b {
     font-weight: 500;
 }
-.ck-content blockquote code strong {
+.ck-content blockquote code, .ck-content blockquote kbd, .ck-content blockquote code strong, .ck-content blockquote kbd strong {
+ font-size: 1.25rem;
+}
+.ck-content blockquote code strong, .ck-content blockquote kbd strong {
     font-weight: 700;
 }
 .ck-content blockquote i, .ck-content blockquote i > b, .ck-content blockquote i > strong, .ck-content blockquote em, .ck-content blockquote em > b, .ck-content blockquote em > strong {
