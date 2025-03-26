@@ -529,6 +529,8 @@ div.footnote-section.ck-widget {
     counter-reset: footnote-counter;
     margin: 2.5rem 0;
     padding: 10px 0;
+    opacity: 0.9;
+    font-size: 1.1rem;
 }
 .ck-content span.footnote-back-link {
     margin-right: 0;
