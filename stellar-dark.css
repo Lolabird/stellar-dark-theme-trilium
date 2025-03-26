@@ -298,12 +298,12 @@ html {
     font-family: var(--header-font-family);
     font-size: 2rem;
 }
-.ck-content h2 code, .ck-content h2 code b, .ck-content h2 code strong, .ck-content h2 code i, .ck-content h2 code em {
-    font-size: 1.9rem;
+.ck-content h2 code, .ck-content h2 code b, .ck-content h2 code strong, .ck-content h2 code i, .ck-content h2 code em, .ck-content h2 kbd, .ck-content h2 kbd i, .ck-content h2 kbd b, .ck-content h2 kbd strong {
+    font-size: 1.74rem;
     background: transparent;
 }
 .ck-content h2 kbd, .ck-content h2 kbd i, .ck-content h2 kbd b, .ck-content h2 kbd strong {
- font-size: 1.9rem;
+ text-decoration: underline;
 }
 
 .ck-content h3 {
@@ -312,12 +312,12 @@ html {
     font-family: var(--header-font-family);
     font-size: 1.9rem;
 }
-.ck-content h3 code, .ck-content h3 code b, .ck-content h3 code strong, .ck-content h3 code i, .ck-content h3 code em {
-    font-size: 1.78rem;
+.ck-content h3 code, .ck-content h3 code b, .ck-content h3 code strong, .ck-content h3 code i, .ck-content h3 code em, .ck-content h3 kbd, .ck-content h3 kbd i, .ck-content h3 kbd b, .ck-content h3 kbd strong {
+    font-size: 1.6rem;
     background: transparent;
 }
 .ck-content h3 kbd, .ck-content h3 kbd i, .ck-content h3 kbd b, .ck-content h3 kbd strong {
- font-size: 1.78rem;
+ text-decoration: underline;
 }
 
 .ck-content h4 {
@@ -326,12 +326,12 @@ html {
     font-family: var(--header-font-family);
     font-size: 1.78rem;
 }
-.ck-content h4 code, .ck-content h4 code b, .ck-content h4 code strong, .ck-content h4 code i, .ck-content h4 code em {
-    font-size: 1.65rem;
+.ck-content h4 code, .ck-content h4 code b, .ck-content h4 code strong, .ck-content h4 code i, .ck-content h4 code em, .ck-content h4 kbd, .ck-content h4 kbd i, .ck-content h4 kbd b, .ck-content h4 kbd strong {
+    font-size: 1.3rem;
     background: transparent;
 }
 .ck-content h4 kbd, .ck-content h4 kbd i, .ck-content h4 kbd b, .ck-content h4 kbd strong {
- font-size: 1.65rem;
+ text-decoration: underline;
 }
 
 .ck-content h5 {
@@ -340,12 +340,12 @@ html {
     font-family: var(--header-font-family);
     font-size: 1.65rem;
 }
-.ck-content h5 code, .ck-content h5 code b, .ck-content h5 code strong, .ck-content h5 code i, .ck-content h5 code em {
-    font-size: 1.53rem;
+.ck-content h5 code, .ck-content h5 code b, .ck-content h5 code strong, .ck-content h5 code i, .ck-content h5 code em, .ck-content h5 kbd, .ck-content h5 kbd i, .ck-content h5 kbd b, .ck-content h5 kbd strong {
+    font-size: 1.2rem;
     background: transparent;
 }
 .ck-content h5 kbd, .ck-content h5 kbd i, .ck-content h5 kbd b, .ck-content h5 kbd strong {
- font-size: 1.53rem;
+ text-decoration: underline;
 }
 
 .ck-content h6 {
@@ -354,12 +354,12 @@ html {
     font-family: var(--header-font-family);
     font-size: 1.53rem;
 }
-.ck-content h6 code, .ck-content h6 code b, .ck-content h6 code strong, .ck-content h6 code i, .ck-content h6 code em {
-    font-size: 1.4rem;
+.ck-content h6 code, .ck-content h6 code b, .ck-content h6 code strong, .ck-content h6 code i, .ck-content h6 code em, .ck-content h6 kbd, .ck-content h6 kbd i, .ck-content h6 kbd b, .ck-content h6 kbd strong  {
+    font-size: 1.1rem;
     background: transparent;
 }
 .ck-content h6 kbd, .ck-content h6 kbd i, .ck-content h6 kbd b, .ck-content h6 kbd strong {
- font-size: 1.4rem;
+ text-decoration: underline;
 }
 
 
