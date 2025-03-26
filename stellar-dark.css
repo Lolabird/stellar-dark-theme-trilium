@@ -549,6 +549,10 @@ div.footnote-section.ck-widget {
 body a * {
  color: var(--link-color);
 }
+a[href^="#root"]:not(#breadcrumbs) {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
 
 
 /*****ICONS*****/
