@@ -543,6 +543,7 @@ div.footnote-section.ck-widget {
     right: 0.2em;
     text-align: right;
     overflow: hidden;
+    margin-left: -5px;
 }
 
 
