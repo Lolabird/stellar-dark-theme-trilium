@@ -1120,46 +1120,23 @@ code.hljs {
 }
 
 /***Zen Mode***/
-/*Use the button or alt+z to toggle it on and off*/
-/* hide launcher buttons*/
-.zen-mode button.bx-chevrons-left,.zen-mode #launcher-pane > .component > :not(button.component.button-widget.bx-spa) {
-    display: none !important;
-}
-/*hide note tree*/
-.zen-mode #left-pane {
-    display: none !important;
-}
-/*hide ribbon buttons*/
-.zen-mode .ribbon-container {
-    display: none !important;
-}
-/*hide note title*/
-.zen-mode .title-row {
-    display: none !important;
-}
-/*hide note tabs*/
-.zen-mode .tab-row-widget .tab-row-widget-container {
-    display: none !important;
+.zen div.title-bar-buttons {
+    margin-left: 50px;
 }
 /*hide none-essential title-bar buttons*/
-.zen-mode .title-bar-buttons > :not(.top-btn,.minimize-btn,.maximize-btn,.close-btn) {
-    display: none;
-}
-/*hide preview of child notes*/
-.zen-mode .note-list-widget {
-    display: none !important;
-}
-/*hide backlink, code buttons, etc.*/
-.zen-mode .floating-buttons-children {
-    display: none !important;
+.zen .title-bar-buttons > :not(.top-btn,.minimize-btn,.maximize-btn,.close-btn) {
+	display: none;
 }
 /*hide nonessential center pane widgets*/
-.zen-mode #center-pane > :not(.split-note-container-widget) {
-    display: none !important;
+.zen #center-pane > :not(.split-note-container-widget) {
+	display: none !important;
 }
-/*hide right pane*
-.zen-mode #right-pane {
-    display: none !important;
+/*show right pane*/
+body.zen div.gutter {
+    display: block !important;
+}
+body.zen div#right-pane:not(.hidden-int) {
+	display: flex !important;
 }
 
 /***Theme Switcher***/
