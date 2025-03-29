@@ -419,6 +419,13 @@ body strong, body b {
 body i, body em {
     color: var(--italic-orange);
 }
+body u {
+    text-decoration-style: dashed;
+}
+body s {
+    text-decoration-style: double;
+}
+
 
 /*****LISTS*****/
 li label {
