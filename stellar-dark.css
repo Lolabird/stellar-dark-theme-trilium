@@ -255,8 +255,12 @@ html {
     margin-bottom: 10px;
 }
 .note-tab div.note-tab-close.bx.bx-x:hover {
-    background: transparent;
-    color: var(--soft-red);
+    background: transparent !important;
+    color: var(--bold-sun) !important;
+}
+.note-tab[active] div.note-tab-close.bx.bx-x:hover {
+    background: transparent !important;
+    color: var(--soft-red) !important;
 }
 
 /*fixes the issue of not being able to access widgets in the top bar*/
