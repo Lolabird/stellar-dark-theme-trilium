@@ -567,13 +567,13 @@ div.footnote-section.ck-widget {
 
 
 /*****LINKS*****/
-body a * {
+body a *, a.ck-widget span {
 	color: var(--link-color);
 }
 .ck-content a:hover {
     text-decoration-style: double !important;
 }
-.ck-content a[href^="#root"] {
+.ck-content a[href^="#root"]:not(.ck-widget) {
     text-decoration: underline dotted;
 }
 .ck-content a:not([href^="#"],[href^="https://"],[href^="http://"]) {
