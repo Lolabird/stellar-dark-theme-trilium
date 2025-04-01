@@ -286,6 +286,11 @@ html {
 .toc-widget .toc li, .highlights-list > ol > li {
     text-align: left;
 }
+.toc kbd {
+    background: transparent;
+    text-decoration: underline;
+    color: inherit;
+}
 
 
 /*****Included Notes*****/
