@@ -861,9 +861,9 @@ div.backlinks-items div:hover {
 .attr-help td {
     color: var(--text-gray) !important;
 }
-.tooltip {
+/* .tooltip {
  z-index: 10 !important;
-}
+} */
 
 
 /*****Deletion Alert*****/
