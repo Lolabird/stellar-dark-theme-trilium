@@ -222,6 +222,10 @@ html {
     --mermaid-theme: dark;
 }
 
+*:focus-visible {
+    outline: var(--bold-sun) auto 1px;
+}
+
 
 /*****Image Caption*****/
 .ck-content .image>figcaption {
