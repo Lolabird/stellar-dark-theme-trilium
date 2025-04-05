@@ -1108,8 +1108,8 @@ code.hljs {
     padding:3px 5px;
 }
 .hljs{
-    background:#fff;
-    color: yellow !important;
+    background: var(--main-background);
+    color: var(--shallow-sea-blue) !important;
 }
 .hljs-number {
     color: var(--code-number) !important;
