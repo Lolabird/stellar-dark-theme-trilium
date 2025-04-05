@@ -704,7 +704,18 @@ input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
 
 
 /*****BUTTONS*****/
-/*edit button*/
+/***modal buttons***/
+button.help-button {
+    color: var(--bright-sun);
+}
+button.help-button:hover {
+    color: var(--dim-sun);
+}
+button.btn-close {
+    filter: invert(1)
+}
+
+/***edit button***/
 .bx-edit-alt {
     height: 40px;
 }
