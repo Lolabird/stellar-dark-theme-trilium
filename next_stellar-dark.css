@@ -618,6 +618,9 @@ div.title-bar-buttons.component button, button.icon-action, .icon-action {
     color: var(--bold-sun) !important;
     border: none !important;
 }
+#launcher-pane button.launcher-button {
+    padding: 0;
+ }
 
 /***Calendar***/
 div.dropdown-menu.dropdown-menu-right > div.calendar-dropdown-widget > div.calendar-body > a.calendar-date:hover, .calendar-dropdown-widget .calendar-btn:hover {
