@@ -392,11 +392,19 @@ tr:nth-child(odd) {
 
 
 /*****TEXT DECORATION*****/
-/*bold*/
-body strong {
-  color:var(--bold-sun);
-  font-weight: 700;
-}
+body strong, body b {
+    color:var(--bold-sun);
+    font-weight: 700;
+  }
+  body i, body em {
+      color: var(--italic-orange);
+  }
+  body u {
+      text-decoration-style: dashed;
+  }
+  body s, body del {
+      text-decoration-style: double;
+  }
 
 /***lists***/
 li label {
