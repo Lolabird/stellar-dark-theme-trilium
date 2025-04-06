@@ -448,9 +448,19 @@ body blockquote{
 }
 
 
-/***decorated links***/
-a > i, a > em, a > b, a > strong {
-    color: var(--link-color);
+/*****LINKS*****/
+body a *, a.ck-widget span {
+	color: var(--link-color);
+}
+.ck-content a:hover {
+    text-decoration-style: double !important;
+}
+.ck-content a[href^="#root"]:not(.ck-widget) {
+    text-decoration: underline dotted;
+}
+.ck-content a:not([href^="#"],[href^="https://"],[href^="http://"]) {
+    color: var(--soft-red);
+    text-decoration: underline wavy 1px;
 }
 
 
