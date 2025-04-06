@@ -877,6 +877,10 @@ div.backlinks-items div:hover {
 .attr-help td {
     color: var(--text-gray) !important;
 }
+.ck.ck-balloon-panel.ck-balloon-panel_visible {
+    display: block;
+    z-index: 100000;
+}
 
 
 /*****Deletion Alert*****/
