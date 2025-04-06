@@ -283,7 +283,7 @@ html {
 .toc-widget span.toc li[style] {
     color: var(--bold-sun) !important;
 }
-.toc-widget span.toc li:not([style*="color:"]) {
+.toc-widget span.toc li:not([style*="color:"]), .toc-widget span.toc li:not([style*="color:"]) * {
     color: inherit !important;
 }
 
