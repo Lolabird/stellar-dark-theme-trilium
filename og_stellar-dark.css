@@ -265,10 +265,6 @@ html {
 
 
 /*****TOC*****/
-.toc-widget{
-    overflow: visible !important;
-    font-size: var(--tree-font-size);
-}
 
 /***Only applies if 'Show Position in TOC' widget is in use***/
 .toc-widget span.toc li[style] {
