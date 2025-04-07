@@ -878,6 +878,17 @@ div.backlinks-items div:hover {
 .button-widget.bx.component.bx-pencil.visible {
     padding: 5px 0 30px;
 }
+div.content-floating-buttons.bottom-right {
+    bottom: 5px;
+    right: 10px;
+}
+div.content-floating-buttons.bottom-right button.bx.content-floating-buttons {
+    font-size: 130%;
+    padding: 4px;
+    width: 38px;
+    height: 34px;
+}
+
 
 /*****Attributes Popup*****/
 .attr-help td {
