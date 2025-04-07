@@ -856,7 +856,7 @@ div.backlinks-items div:hover {
     margin: 5px 0 5px 1px !important;
     border-radius: var(--button-border-radius);
 }
-.relation-map-buttons > button:hover, .relation-map-buttons > .btn-group button:hover, button.copy-image-reference-button:hover, button.export-mermaid-button:hover, .floating-buttons-children > button:hover, .floating-buttons-children .floating-button:hover {
+.relation-map-buttons > button:hover, .relation-map-buttons > .btn-group button:hover, button.copy-image-reference-button:hover, button.export-mermaid-button:hover, .floating-buttons-children > button:hover, .floating-buttons-children .floating-button:hover, div.content-floating-buttons button.bx:hover {
     border: none;
     background: transparent !important;
     color: var(--bold-sun);
@@ -886,6 +886,7 @@ div.content-floating-buttons button.bx {
     padding: 4px;
     width: 38px;
     height: 34px;
+    border: none;
 }
 
 
