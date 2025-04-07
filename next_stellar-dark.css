@@ -881,7 +881,7 @@ div.content-floating-buttons.bottom-right {
     bottom: 5px;
     right: 10px;
 }
-div.content-floating-buttons.bottom-right button.bx.content-floating-buttons {
+div.content-floating-buttons button.bx {
     font-size: 130%;
     padding: 4px;
     width: 38px;
