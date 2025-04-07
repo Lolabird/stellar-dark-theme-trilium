@@ -852,7 +852,7 @@ div.backlinks-items div:hover {
     margin: 5px 0 5px 1px !important;
     border-radius: var(--button-border-radius);
 }
-.relation-map-buttons > button:hover, .relation-map-buttons > .btn-group button:hover, button.copy-image-reference-button:hover, button.export-mermaid-button:hover, .floating-buttons-children > button:hover, .floating-buttons-children .floating-button:hover, div.content-floating-buttons button.bx:hover {
+.relation-map-buttons > button:hover, .relation-map-buttons > .btn-group button:hover, button.copy-image-reference-button:hover, button.export-mermaid-button:hover, .floating-buttons-children > button:hover, .floating-buttons-children .floating-button:hover, div.content-floating-buttons button.bx:hover, button.close-floating-buttons-button:hover {
     border: none;
     background: transparent !important;
     color: var(--bold-sun);
@@ -865,9 +865,6 @@ div.backlinks-items div:hover {
     padding: 6px;
     border-radius: 100px;
     margin: 5px;
-}
-.close-floating-buttons-button:hover {
-    border: none !important;
 }
 
 .button-widget.bx.component.bx-pencil.visible, .button-widget.bx.component.visible.bx-lock-alt  {
