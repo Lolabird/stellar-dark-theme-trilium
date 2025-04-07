@@ -435,7 +435,7 @@ body i, body em {
 body u {
     text-decoration-style: dashed;
 }
-body s {
+body s, body del {
     text-decoration-style: double;
 }
 
@@ -619,8 +619,8 @@ div.title-bar-buttons.component button, button.icon-action, .icon-action {
     border: none !important;
 }
 #launcher-pane button.launcher-button {
-    padding: 0;
- }
+	padding: 0;
+}
 
 /***Calendar***/
 div.dropdown-menu.dropdown-menu-right > div.calendar-dropdown-widget > div.calendar-body > a.calendar-date:hover, .calendar-dropdown-widget .calendar-btn:hover {
@@ -874,8 +874,8 @@ div.backlinks-items div:hover {
     border: none !important;
 }
 
-.button-widget.bx.component.bx-pencil.visible {
-    padding: 5px 0 30px;
+.button-widget.bx.component.bx-pencil.visible, .button-widget.bx.component.visible.bx-lock-alt  {
+ padding: 5px 9px 30px;
 }
 div.content-floating-buttons.bottom-right {
     bottom: 5px;
