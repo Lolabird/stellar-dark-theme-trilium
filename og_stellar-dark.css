@@ -389,18 +389,18 @@ tr:nth-child(odd) {
 
 /*****TEXT DECORATION*****/
 body strong, body b {
-    color:var(--bold-sun);
-    font-weight: 700;
-  }
-  body i, body em {
-      color: var(--italic-orange);
-  }
-  body u {
-      text-decoration-style: dashed;
-  }
-  body s, body del {
-      text-decoration-style: double;
-  }
+  color:var(--bold-sun);
+  font-weight: 700;
+}
+body i, body em {
+    color: var(--italic-orange);
+}
+body u {
+    text-decoration-style: dashed;
+}
+body s, body del {
+    text-decoration-style: double;
+}
 
 /***lists***/
 li label {
@@ -1062,10 +1062,10 @@ code.hljs {
 .zen-mode #center-pane > :not(.split-note-container-widget) {
     display: none !important;
 }
-/*hide right pane*/
-/*.zen-mode #right-pane {
+/*hide right pane*
+.zen-mode #right-pane {
     display: none !important;
-}*/
+}
 
 /***Theme Switcher***/
 .theme-selection.component .switch {
