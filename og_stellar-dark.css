@@ -595,10 +595,10 @@ input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
 
 /*****BUTTONS*****/
 /***modal buttons***/
-.help-button {
+button.help-button {
     color: var(--bright-sun);
 }
-.help-button:hover {
+button.help-button:hover {
     color: var(--dim-sun);
 }
 
