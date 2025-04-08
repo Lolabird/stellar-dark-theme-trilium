@@ -71,10 +71,7 @@ The right panel is enabled by default. If you would like to disable this in the 
     display: none !important;
 }
 ```
-
-
 https://github.com/user-attachments/assets/dc398d7c-d3e9-402c-86b2-9576f402a13d
-
 
 In TriliumNext, you will need to comment out this code:
 
@@ -88,10 +85,7 @@ body.zen div#right-pane:not(.hidden-int) {
 }
 
 ```
-
-
 https://github.com/user-attachments/assets/ce651ab5-d970-49c8-bfef-94962cead03c
-
 
 ##### Added Features
 * Window control buttons are still accessible in zen mode*
@@ -109,14 +103,13 @@ Please go to each addon's respective page for instructions on how to enable thes
 ## Screenshots
 The following screenshots are from TriliumNext. Most of the features shown are also available in either OG Trilium or can be included via addons. However, some features, like cards (excluding quotes) and <kbd>kbd</kbd>, are only available in TriliumNext.
 
-
 https://github.com/user-attachments/assets/a19c6459-71c1-454f-921c-78c09088c9f4
 
+![Relation Map](/screenshots/SD_Relation_Map.png)
 
+![Code Note](/screenshots/SD_Code.png)
 
 https://github.com/user-attachments/assets/4874d7b6-e8bf-4c07-87d1-3869bb09c68d
-
-
 
 ## Credits and Resources
 ### Fonts
