@@ -1,5 +1,5 @@
 # Stellar Dark Theme 
-Dark theme for [Trilium Notes](https://github.com/zadam/trilium) and [TriliumNext](https://github.com/TriliumNext/Notes).
+Dark theme for [Trilium Notes](https://github.com/zadam/trilium) (OG Trilium) and [TriliumNext](https://github.com/TriliumNext/Notes).
 
 ![Text Showcase](/screenshots/SD_main.png)
 
@@ -31,7 +31,7 @@ _*If you are using TriliumNext, zen mode and code block syntax highlight are alr
     * OG_StellarDark if you use the original Trilium Notes
     * Next_StellarDark if you use TriliumNext
 
-* In your trilium instance right click a note you want to import the theme into
+* In your Trilium instance right click a note you want to import the theme into
 * Select "Import into note" in the context menu
 * Uncheck "Safe import" and upload the zip file you just downloaded
 * Click on the Trilium logo in the upper left corner and select Options -> Appearance
@@ -54,16 +54,16 @@ _*If you are using TriliumNext, zen mode and code block syntax highlight are alr
         shortcut: 'alt+z'
     });
     ```
-* Reload (<kbd>ctrl+r</kbd> or <kbd>F5</kbd>) Trilium to enable the script
+* Reload (<kbd>Ctrl+R</kbd> or <kbd>F5</kbd>) Trilium to enable the script
 
 ##### Usage
-Press <kbd>alt+z</kbd> or the zen (spa) button in the launcher (left most panel) to enable/disable zen mode.
+Press <kbd>Alt+Z</kbd> or the zen (spa) button in the launcher (left most panel) to enable/disable zen mode.
 
 There are two types of zen mode available:
 1. Right panel enabled
 2. Right panel disabled
 
-The right panel is enabled by default. If you would like to disable this in the original Trilium, you can either add the following code in a new CSS note or uncomment in the theme.
+The right panel is enabled by default in text notes. If you would like to disable this in OG Trilium, you can either add the following code in a new CSS note or uncomment it in the theme:
 
 ```css
 /*hide right pane*/
@@ -71,6 +71,7 @@ The right panel is enabled by default. If you would like to disable this in the 
     display: none !important;
 }
 ```
+
 https://github.com/user-attachments/assets/dc398d7c-d3e9-402c-86b2-9576f402a13d
 
 In TriliumNext, you will need to comment out this code:
@@ -83,13 +84,13 @@ body.zen div.gutter {
 body.zen div#right-pane:not(.hidden-int) {
 	display: flex !important;
 }
-
 ```
+
 https://github.com/user-attachments/assets/ce651ab5-d970-49c8-bfef-94962cead03c
 
-##### Added Features
+##### Additional Features
 * Window control buttons are still accessible in zen mode*
-* Zen button is still accessible in zen mode for easy disabling in case you don't remember the shortcut*
+* Zen button is still accessible in zen mode for a more accessible zen mode exit*
 * Bottom panel widgets are not visible in zen mode
 * Optional disabling of right panel in zen mode
 
@@ -101,7 +102,7 @@ Please go to each addon's respective page for instructions on how to enable thes
 * [Syntax Highlight](https://github.com/antoniotejada/Trilium-SyntaxHighlightWidget)
 
 ## Screenshots
-The following screenshots are from TriliumNext. Most of the features shown are also available in either OG Trilium or can be included via addons. However, some features, like cards (excluding quotes) and <kbd>kbd</kbd>, are only available in TriliumNext.
+The following screenshots are from TriliumNext. Most of the features shown are also available in either OG Trilium or can be included via addons. However, some features, like cards (excluding blockquotes) and <kbd>kbd</kbd>, are only available in TriliumNext.
 
 https://github.com/user-attachments/assets/a19c6459-71c1-454f-921c-78c09088c9f4
 
@@ -125,4 +126,5 @@ https://github.com/user-attachments/assets/4874d7b6-e8bf-4c07-87d1-3869bb09c68d
 * WordCount (Featured in the [Demo Document](https://github.com/zadam/trilium/wiki/Document#demo-document))
 * [Zen Mode](https://github.com/Nriver/awesome-trilium/issues/44)
 
-Find more addons made by the Trilium community at [Nriver's "Awesome Trilium" page](https://github.com/Nriver/awesome-trilium?tab=readme-ov-file#%EF%B8%8F-widgets), and check out my other themes [EverForest Ant Dark](https://github.com/Lolabird/everforest-ant-dark-trilium-theme) and [Ocean Dark](https://github.com/Lolabird/ocean-dark-trilium-theme) while you're at it!!
+Find more addons made by the Trilium community at [Nriver's "Awesome Trilium" page](https://github.com/Nriver/awesome-trilium?tab=readme-ov-file#%EF%B8%8F-widgets), and check out my other themes [EverForest Ant Dark](https://github.com/Lolabird/everforest-ant-dark-trilium-theme) and [Ocean Dark](https://github.com/Lolabird/ocean-dark-trilium-theme) while you're at it!
+ 
