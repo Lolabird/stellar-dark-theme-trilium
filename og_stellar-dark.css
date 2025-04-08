@@ -456,7 +456,7 @@ body blockquote{
 body a *, a.ck-widget span {
 	color: var(--link-color);
 }
-.ck-content a:hover {
+.ck-content a:hover, a.no-tooltip-preview {
     text-decoration-style: double !important;
 }
 .ck-content a[href^="#root"]:not(.ck-widget) {
