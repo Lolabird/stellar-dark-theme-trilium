@@ -1,7 +1,7 @@
 # Stellar Dark Theme 
 Dark theme for [Trilium Notes](https://github.com/zadam/trilium) and [TriliumNext](https://github.com/TriliumNext/Notes)
 
-![Text Showcase](/screenshots/StellarDark_main.png)
+![Text Showcase](/screenshots/SD_main.png)
 
 ## Features
 ### Native Styles
@@ -63,7 +63,7 @@ There are two types of zen mode available:
 1. Right panel enabled
 2. Right panel disabled
 
-Right panel is enabled by default. If you would like to disable it, you can either add the following code in a new CSS note or uncomment it in the Stellar Dark theme as seen in the video below.
+The right panel is enabled by default. If you would like to disable this in the original Trilium, you can either add the following code in a new CSS note or uncomment in the theme.
 
 ```css
 /*hide right pane*/
@@ -72,7 +72,18 @@ Right panel is enabled by default. If you would like to disable it, you can eith
 }
 ```
 
-https://github.com/user-attachments/assets/189e35e4-2ba0-4e93-b6cb-1dd25e0cd523
+In TriliumNext, you will need to comment out this code:
+
+```css
+/*show right pane*/
+body.zen div.gutter {
+    display: block !important;
+}
+body.zen div#right-pane:not(.hidden-int) {
+	display: flex !important;
+}
+
+```
 
 ##### Added Features
 * Window control buttons are still accessible in zen mode*
@@ -87,18 +98,9 @@ Please go to each addon's respective page for instructions on how to enable thes
 * [Show Position in TOC](https://github.com/SiriusXT/trilium-show-position-in-toc)
 * [Syntax Highlight](https://github.com/antoniotejada/Trilium-SyntaxHighlightWidget)
 
-## Screenshots and Videos
-![Selection Showcase](/screenshots/SD_Hover.png)
+## Screenshots
+The following screenshots are from TriliumNext. Most of the features shown are also available in either OG Trilium or can be included via addons. However, some features, like cards (excluding quotes) and <kbd>kbd</kbd>, are only available in TriliumNext.
 
-https://github.com/user-attachments/assets/60c5d157-fe57-48de-93a4-9f63479756f1
-
-![Map Showcase](/screenshots/SD_Map.png)
-
-![Code Showcase](/screenshots/SD_Code.png)
-
-https://github.com/user-attachments/assets/a087b308-f532-4ff9-a620-444252ee71ce
-
-![Text Note Syntax Highlight Showcase](/screenshots/SD_Highlight.png)
 
 ## Credits and Resources
 ### Fonts
