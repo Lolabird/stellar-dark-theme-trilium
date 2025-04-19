@@ -246,8 +246,11 @@ html {
 
 
 /*****TABS*****/
-.tab-row-widget .note-tab .note-tab-wrapper {
-    height: 46px !important;
+div.tab-row-widget .note-tab .note-tab-wrapper {
+    height: 39px;
+    padding: 5px 5px 2px 11px;
+    margin-top: 1px;
+    border-radius: 8px 8px 0 0;
     font-size: var(--detail-font-size);
     font-family: var(--header-font-family);
 }
