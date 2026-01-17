@@ -1051,66 +1051,6 @@ body {
 }
 
 
-/*****CODEMIRROR****/
-/******************************************************************
-NOTE: comments for this section are for how they appear in CSS code notes unless otherwise noted. All code notes have the same color theme, but the application may be different. Some elements are affected the same way accross all code notes (i.e. all strings appear the same across code notes and as do comments, variables, and functions).
-******************************************************************/
-
-/***general appearance***/
-/*'...line' is for regular code notes text, not sure what '...line-like' is for*/
-.CodeMirror pre.CodeMirror-line,
-.CodeMirror pre.CodeMirror-line-like {
-    color: var(--text-gray);
-}
-
-.CodeMirror-linenumber {color: var(--devils-gray-lol);}
-.CodeMirror-cursor {
-    border-left: 1px solid var(--devils-gray-lol);
-}
-
-/***highlighted and selected text in code notes***/
-.CodeMirror-selected {
-   background-color: var(--code-select-gray);
-}
-.CodeMirror-focused .CodeMirror-selected {
-    background-color: var(--code-select-gray);
-}
-.cm-s-default .cm-matchhighlight{
-    color: var(--text-gray) !important;
-    background-color: var(--earth-sun);
-}
-
-/***general elements***/
-.cm-s-default .cm-atom {color: var(--code-number);} /*fonts and colors (code not words)*/
-.cm-s-default .cm-def {color: var(--code-def);} /*@ and class definitions (php)*/
-.cm-s-default .cm-qualifier {color: var(--code-class);} /*class*/
-.cm-s-default .cm-builtin {color: var(--code-builtin);} /*id-selectors*/
-.cm-s-default .cm-tag {color: var(--code-tag);} /*html tags*/
-.cm-s-default .cm-meta {color: var(--code-meta);}  /*meta (browser compatability) tags*/
-.cm-s-default .cm-comment {color: var(--code-comment);} /*comments*/
-.cm-s-default .cm-number {color: var(--code-number);} /*numbers including units, not including color codes*/
-.cm-s-default .cm-keyword {color: var(--code-keyword);} /*color names and keywords*/
-.cm-s-default .cm-attribute {color: var(--code-attribute);} /*print keyword*/
-
-/***variables***/
-.cm-s-default .cm-punctuation, .cm-s-default .cm-operator {}
-.cm-s-default .cm-property{color: var(--code-attribute);}
-.cm-s-default .cm-variable, .cm-s-default .cm-variable-2 {color: var(--code-var);} /*custom properties and php variables*/
-.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: var(--code-pseudo);} /*pseudo elements and classes*/
-
-/***strings***/
-.cm-s-default .cm-string {color: var(--code-string);}
-.cm-s-default .cm-string-2 {color: var(--code-string);} /*Regex and strings that can contain other strings*/
-
-/***brackets and parentheses***/
-div.CodeMirror span.CodeMirror-matchingbracket {color: #01ba3f;}
-div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #c60101;}
-
-/***code errors***/
-.cm-s-default .cm-error {color: #f00;}
-.cm-invalidchar {color: #f00;}
-
-
 /*****ADDONS*****/
 /***Highlight.js***/
 pre code.hljs {
