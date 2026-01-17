@@ -277,7 +277,6 @@ div.tab-row-widget .note-tab .note-tab-wrapper {
 
 
 /*****TOC*****/
-
 /***Only applies if 'Show Position in TOC' widget is in use***/
 .toc li.in-view {
     color: var(--bold-sun) !important;
