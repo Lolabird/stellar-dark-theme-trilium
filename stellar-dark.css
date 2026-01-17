@@ -279,11 +279,8 @@ div.tab-row-widget .note-tab .note-tab-wrapper {
 /*****TOC*****/
 
 /***Only applies if 'Show Position in TOC' widget is in use***/
-.toc-widget span.toc li[style] {
+.toc li.in-view {
     color: var(--bold-sun) !important;
-}
-.toc-widget span.toc li:not([style*="color:"]), .toc-widget span.toc li:not([style*="color:"]) * {
-    color: inherit !important;
 }
 
 .toc-widget .toc li, .highlights-list > ol > li {
