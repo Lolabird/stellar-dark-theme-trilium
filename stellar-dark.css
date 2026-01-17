@@ -906,7 +906,7 @@ div.content-floating-buttons button.bx {
 
 /*****CODE IN TEXT NOTES)*****/
 /***code blocks***/
-.ck-content pre {
+.ck-content pre, .ck-content pre.hljs {
     background: var(--supa-dark);
     font-size: 0.9rem;
     border-color: var(--shallow-sea-blue);
