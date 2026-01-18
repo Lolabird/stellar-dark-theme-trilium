@@ -640,11 +640,6 @@ button.tree-floating-button {
     font-size: 1.5rem !important;
 }
 
-/***Trilium icon***/
-body .global-menu-button {
-    background-image: url("/assets/vX/images/icon-grey.png");
-}
-
 
 /*****INPUT FIELDS*****/
 /***password and options menu fields***/
