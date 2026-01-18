@@ -248,9 +248,9 @@ html {
 /*****TABS*****/
 div.tab-row-widget .note-tab .note-tab-wrapper {
     height: 39px;
-    padding: 5px 5px 2px 11px;
-    margin-top: 1px;
-    border-radius: 8px 8px 0 0;
+ 	padding: 5px 5px 2px 11px;
+	margin-top: 1px;
+	border-radius: 8px 8px 0 0;
     font-size: var(--detail-font-size);
     font-family: var(--header-font-family);
 }
@@ -933,6 +933,86 @@ pre::after{
     color: var(--bold-sun);
 }
 
+/***Highlight.js***/
+pre code.hljs {
+    display:block;
+    overflow-x:auto;
+    padding:1em;
+}
+code.hljs {
+    padding:3px 5px;
+}
+.hljs{
+    background: var(--main-background);
+    color: var(--shallow-sea-blue) !important;
+}
+.hljs-number {
+    color: var(--code-number) !important;
+}
+.hljs-selector-class {
+    color: var(--code-class) !important;
+}
+.hljs-selector-pseudo {
+    color: var(--code-pseudo) !important;
+}
+.hljs-keyword {
+    color: var(--code-keyword) !important;
+}
+.hljs-meta {
+    color: var(--code-meta) !important;
+}
+.hljs-title,.hljs-property {
+    color: var(--code-def) !important;
+}
+.hljs-variable,.hljs-params,.hljs-subst {
+    color: var(--code-var) !important;
+}
+.hljs-comment,.hljs-quote {
+    color: var(--code-comment) !important;
+}
+.hljs-name,.hljs-name>.hljs-tag,.hljs-selector-tag,.hljs-tag,.hljs-deletion,.hljs-selector-attr {
+    color: var(--code-tag) !important;
+}
+.hljs-attribute {
+    color: var(--code-attribute) !important;
+}
+.hljs-addition,.hljs-literal,.hljs-section,.hljs-string,.hljs-string>.hljs-tag,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-regexp {
+    color: var(--code-string) !important;
+}
+.hljs-built_in {
+    color: var(--code-builtin) !important;
+}
+.hljs-doctag,.hljs-attr,.hljs-attr>.hljs-tag,.hljs-bullet,.hljs-link,.hljs-symbol {
+    color: var(--soft-sea-green) !important;
+}
+.hljs-emphasis {
+    font-style:italic;
+}
+.hljs-strong {
+    font-weight:700;
+}
+
+
+/*****ZEN MODE*****/
+.zen div.title-bar-buttons {
+    margin-left: 50px;
+}
+/*hide none-essential title-bar buttons*/
+.zen .title-bar-buttons > :not(.top-btn,.minimize-btn,.maximize-btn,.close-btn) {
+	display: none;
+}
+/*hide nonessential center pane widgets*/
+.zen #center-pane > :not(.split-note-container-widget) {
+	display: none !important;
+}
+/*show right pane*/
+body.zen div.gutter {
+    display: block !important;
+}
+body.zen div#right-pane:not(.hidden-int) {
+	display: flex !important;
+}
+
 
 /*****CKEDITOR*****/
 /******************************************************************
@@ -1039,85 +1119,6 @@ body {
 
 
 /*****ADDONS*****/
-/***Highlight.js***/
-pre code.hljs {
-    display:block;
-    overflow-x:auto;
-    padding:1em;
-}
-code.hljs {
-    padding:3px 5px;
-}
-.hljs{
-    background: var(--main-background);
-    color: var(--shallow-sea-blue) !important;
-}
-.hljs-number {
-    color: var(--code-number) !important;
-}
-.hljs-selector-class {
-    color: var(--code-class) !important;
-}
-.hljs-selector-pseudo {
-    color: var(--code-pseudo) !important;
-}
-.hljs-keyword {
-    color: var(--code-keyword) !important;
-}
-.hljs-meta {
-    color: var(--code-meta) !important;
-}
-.hljs-title,.hljs-property {
-    color: var(--code-def) !important;
-}
-.hljs-variable,.hljs-params,.hljs-subst {
-    color: var(--code-var) !important;
-}
-.hljs-comment,.hljs-quote {
-    color: var(--code-comment) !important;
-}
-.hljs-name,.hljs-name>.hljs-tag,.hljs-selector-tag,.hljs-tag,.hljs-deletion,.hljs-selector-attr {
-    color: var(--code-tag) !important;
-}
-.hljs-attribute {
-    color: var(--code-attribute) !important;
-}
-.hljs-addition,.hljs-literal,.hljs-section,.hljs-string,.hljs-string>.hljs-tag,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-regexp {
-    color: var(--code-string) !important;
-}
-.hljs-built_in {
-    color: var(--code-builtin) !important;
-}
-.hljs-doctag,.hljs-attr,.hljs-attr>.hljs-tag,.hljs-bullet,.hljs-link,.hljs-symbol {
-    color: var(--soft-sea-green) !important;
-}
-.hljs-emphasis {
-    font-style:italic;
-}
-.hljs-strong {
-    font-weight:700;
-}
-
-/***Zen Mode***/
-.zen div.title-bar-buttons {
-    margin-left: 50px;
-}
-/*hide none-essential title-bar buttons*/
-.zen .title-bar-buttons > :not(.top-btn,.minimize-btn,.maximize-btn,.close-btn) {
-	display: none;
-}
-/*hide nonessential center pane widgets*/
-.zen #center-pane > :not(.split-note-container-widget) {
-	display: none !important;
-}
-/*show right pane*/
-body.zen div.gutter {
-    display: block !important;
-}
-body.zen div#right-pane:not(.hidden-int) {
-	display: flex !important;
-}
-
 /***Theme Switcher***/
 .theme-selection.component .switch {
     top: 5.75px !important;
