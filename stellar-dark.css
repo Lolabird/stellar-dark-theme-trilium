@@ -225,6 +225,9 @@ html {
 *:focus-visible {
     outline: var(--bold-sun) auto 1px;
 }
+.component.note-detail {
+    margin: auto;
+}
 
 
 /*****Image Caption*****/
