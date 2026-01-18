@@ -526,7 +526,7 @@ span.footnote-reference > sup > a {
     font-size: .9em;
 }
 /*Block*/
-div.footnote-section.ck-widget {
+div.footnote-section.ck-widget, ol.footnote-section.footnotes {
     border: none;
     border-top: 1px solid var(--devils-gray-lol);
     border-radius: 0;
