@@ -374,7 +374,7 @@ div.tab-row-widget .note-tab .note-tab-wrapper {
     font-family: var(--header-font-family);
 }
 .ck-content .table table, .ck-content .table table td, .ck-content .table table th {
-    border: none;
+    border: none !important;
 }
 .ck-content .table table th {
     font-weight: 600 !important;
@@ -393,16 +393,11 @@ tr:nth-child(odd) {
 }
 .ck-content .table table thead th {
 	position: sticky;
-	position: -webkit-sticky;
 	top: 0;
 	z-index: 1;
 }
-.ck-content .table table tbody th {
-	position: relative;
-}
 .ck-content .table table thead th:first-child {
 	position: sticky;
-	position: -webkit-sticky;
 	left: 0;
 	z-index: 2;
 }
